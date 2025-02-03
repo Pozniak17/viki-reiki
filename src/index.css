@@ -1,68 +1,118 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* background */
+  --White: "#FFFFFF";
+  --Footer: #212121;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* body */
+  --Text: #2c2727;
+  --Grey: #414343;
+  --Beige: #ffdfcb;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* title */
+  --Title: #00758f;
+
+  /* Shadow & Stroke */
+  --Pink: #ffe3f6;
+  --Stroke: #dfdfdf;
+  --Skroll: #4194b7;
+
+  /* Accent */
+  --Blue: #6091d4;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+@font-face {
+  font-family: "Lato Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lato Regular"), url("Lato-Regular.woff") format("woff");
 }
-a:hover {
-  color: #535bf2;
+
+@font-face {
+  font-family: "Lato Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lato Italic"), url("Lato-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato Hairline";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lato Hairline"), url("Lato-Hairline.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato Hairline Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lato Hairline Italic"),
+    url("Lato-HairlineItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lato Light"), url("Lato-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato Light Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lato Light Italic"), url("Lato-LightItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lato Bold"), url("Lato-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lato Bold Italic"), url("Lato-BoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lato Black"), url("Lato-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato Black Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lato Black Italic"), url("Lato-BlackItalic.woff") format("woff");
 }
 
 body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+ul,
+ol {
+  margin: 0;
+  padding: 0;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+img {
+  display: block;
+  max-width: 100%;
 }
