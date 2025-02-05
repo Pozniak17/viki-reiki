@@ -20,26 +20,28 @@ export default function Header() {
             </li>
           </ul>
 
-          <ul className={styles.menu_list}>
-            <li>
-              <p className={styles.menu_text}>About me</p>
-            </li>
-            <li>
-              <p className={styles.menu_text}>Reiki Sessions</p>
-            </li>
-            <li>
-              <p className={styles.menu_text}>Calendar</p>
-            </li>
-            <li>
-              <p className={styles.menu_text}>FAQs</p>
-            </li>
-            <li>
-              <p className={styles.menu_text}>Contact</p>
-            </li>
-            <li>
-              <img src={language} alt="change language" />
-            </li>
-          </ul>
+          <nav>
+            <ul className={styles.menu_list}>
+              <li>
+                <p className={styles.menu_text}>About me</p>
+              </li>
+              <li>
+                <p className={styles.menu_text}>Reiki Sessions</p>
+              </li>
+              <li>
+                <p className={styles.menu_text}>Calendar</p>
+              </li>
+              <li>
+                <p className={styles.menu_text}>FAQs</p>
+              </li>
+              <li>
+                <p className={styles.menu_text}>Contact</p>
+              </li>
+              <li>
+                <img src={language} alt="change language" />
+              </li>
+            </ul>
+          </nav>
         </div>
       </Container>
     </header>
