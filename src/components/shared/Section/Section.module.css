@@ -2,3 +2,17 @@
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+@media (min-width: 744px) {
+  .section {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}

@@ -22,13 +22,9 @@
 .text {
   color: var(--Body-Text, #2c2727);
   text-align: center;
-
-  /* Mobile/Body/Big */
   font-family: Lato;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px; /* 155.556% */
+  line-height: 28px;
 
   margin-bottom: 24px;
 }
@@ -40,6 +36,9 @@
   width: 100%;
   height: 64px;
   padding: 18px 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   color: #fff;
 
@@ -51,6 +50,7 @@
   line-height: 32px; /* 200% */
   letter-spacing: 0.08px;
   border: inherit;
+  cursor: pointer;
 }
 
 .button {
@@ -63,6 +63,9 @@
   padding: 18px 48px;
   color: var(--Button-Default-Reset, #4194b7);
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* Mobile/Headings/H4 Bold */
   font-family: Lato;
   font-size: 16px;
@@ -70,4 +73,101 @@
   font-weight: 700;
   line-height: 32px; /* 200% */
   letter-spacing: 0.08px;
+
+  cursor: pointer;
+}
+
+@media (min-width: 744px) {
+  .image {
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 434px;
+    height: 524px;
+  }
+
+  .title {
+    margin-bottom: 48px;
+    text-align: start;
+    font-size: 40px;
+    letter-spacing: 0.4px;
+  }
+
+  .text {
+    margin-bottom: 40px;
+    text-align: start;
+    font-size: 20px;
+    line-height: 32px; /* 160% */
+  }
+
+  .button_wrapper {
+    display: flex;
+    gap: 15px;
+  }
+
+  .button_accent {
+    margin-bottom: 0;
+    color: #fff;
+
+    /* Tablet/Headings/H4 bold */
+    font-family: Lato;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 127.273% */
+    letter-spacing: 0.22px;
+  }
+  .button {
+    /* Tablet/Headings/H4 bold */
+    font-family: Lato;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 127.273% */
+    letter-spacing: 0.22px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+  }
+
+  .image {
+    margin-bottom: 0;
+    width: 384px;
+    height: 464px;
+  }
+
+  .title {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.48px;
+  }
+
+  .text {
+    font-size: 24px;
+    margin-bottom: 80px;
+  }
+
+  .button_accent {
+    /* Desktop/Headings/H4 bold */
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: 0.5px;
+  }
+
+  .button {
+    color: var(--Button-Default-Reset, #4194b7);
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+  }
 }
