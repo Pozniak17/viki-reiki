@@ -1,4 +1,4 @@
-import data from "../../utils/card.json";
+import data from "../../utils/services.json";
 import Card from "../Card/Card";
 import style from "./CardList.module.css";
 

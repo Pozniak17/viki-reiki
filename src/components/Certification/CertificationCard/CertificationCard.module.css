@@ -1,0 +1,29 @@
+.card_item {
+  width: 300px;
+  padding: 32px 24px;
+  border-radius: 32px;
+  border: 1px solid var(--Button-Primary-Reset, #f7b84b);
+  background: var(--Background-White, #fff);
+}
+
+.card_text {
+  margin-top: 24px;
+  color: var(--Body-Grey, #414343);
+  opacity: 0.6;
+
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media (min-width: 744px) {
+  .card_item {
+    width: 338px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .card_item {
+    width: 384px;
+  }
+}

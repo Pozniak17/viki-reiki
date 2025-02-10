@@ -7,13 +7,13 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 import Card from "../Card/Card";
-import data from "../../utils/card.json";
-import styles from "./SliderCardList.module.css";
+import data from "../../utils/services.json";
+// import styles from "./SliderCardList.module.css";
 
 export default function SliderCardList() {
   console.log(data);
   return (
-    <div className={styles}>
+    <div>
       <Swiper
         // modules={[Navigation, Pagination]}
         modules={[Pagination, Autoplay, Navigation]}

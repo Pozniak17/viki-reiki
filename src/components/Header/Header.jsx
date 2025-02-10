@@ -23,7 +23,7 @@ export default function Header() {
           <nav>
             <ul className={styles.menu_list}>
               <li>
-                <p className={styles.menu_text}>About me</p>
+                <p className={styles.menu_text}>My Story</p>
               </li>
               <li>
                 <p className={styles.menu_text}>Reiki Sessions</p>

@@ -1,4 +1,5 @@
 import "./App.css";
+import Certification from "./components/Certification/Certification/Certification";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Introduce from "./components/Introduce/Introduce";
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Introduce />
       <Services />
+      <Certification />
     </>
   );
 }
