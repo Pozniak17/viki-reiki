@@ -1,6 +1,6 @@
-import styles from "./Card.module.css";
+import styles from "./ServicesCard.module.css";
 
-export default function Card({ image, text }) {
+export default function ServicesCard({ image, text }) {
   return (
     <div className={styles.wrapper}>
       <div>

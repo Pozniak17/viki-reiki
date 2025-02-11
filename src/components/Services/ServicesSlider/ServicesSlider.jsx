@@ -6,12 +6,12 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-import Card from "../Card/Card";
-import data from "../../utils/services.json";
+import ServicesCard from "../ServicesCard/ServicesCard";
+import services from "../../utils/services.json";
 // import styles from "./SliderCardList.module.css";
 
-export default function SliderCardList() {
-  console.log(data);
+export default function ServicesSlider() {
+  console.log(services);
   return (
     <div>
       <Swiper
@@ -39,9 +39,9 @@ export default function SliderCardList() {
           },
         }}
       >
-        {data.map((item) => (
+        {services.map((item) => (
           <SwiperSlide key={item.id}>
-            <Card image={item.image} text={item.text} />
+            <ServicesCard image={item.image} text={item.text} />
           </SwiperSlide>
         ))}
       </Swiper>

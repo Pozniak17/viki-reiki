@@ -1,9 +1,9 @@
 import { useMediaQuery } from "react-responsive";
 
-import Section from "../shared/Section/Section";
+import Section from "../../shared/Section/Section";
 import styles from "./Services.module.css";
-import SliderCardList from "../CardList/SliderCardList/SliderCardList";
-import CardList from "../CardList/CardList/CardList";
+import ServicesList from "../ServicesList/ServicesList";
+import ServicesSlider from "../ServicesSlider/ServicesSlider";
 
 export default function Services() {
   const isTabletScreen = useMediaQuery({
@@ -16,7 +16,7 @@ export default function Services() {
         These are the different ways I can support your wellness journey.
       </p>
 
-      {isTabletScreen ? <CardList /> : <SliderCardList />}
+      {isTabletScreen ? <ServicesList /> : <ServicesSlider />}
     </Section>
   );
 }
