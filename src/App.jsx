@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import Introduce from "./components/Introduce/Introduce";
 import Services from "./components/Services/Services/Services";
 import Video from "./components/Video/Video";
+import Steps from "./components/Steps/Steps";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Services />
       <Certification />
       <Video />
+      <Steps />
     </>
   );
 }
