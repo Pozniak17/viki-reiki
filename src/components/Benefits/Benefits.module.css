@@ -77,10 +77,19 @@
 	filter: drop-shadow(1px 2px 4px #4eb2a3);
 }
 
-@media (min-width: 744px) {
+@media (min-width: 744px) and (max-width: 1439px) {
 	.icon {
 		top: 54%;
 		left: 47%;
 		transform: translate(-50%, -50%); /* Центрує іконку */
+	}
+}
+
+@media (min-width: 1440px) {
+	.icon {
+		right: 90px;
+		bottom: 80px;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 }

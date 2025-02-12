@@ -6,7 +6,7 @@ import styles from './Benefits.module.css';
 
 export default function Benefits() {
 	const isMobile = useMediaQuery({ maxWidth: 743 });
-	const isTablet = useMediaQuery({ minWidth: 744, maxWidth: 1043 });
+	const isTablet = useMediaQuery({ minWidth: 744, maxWidth: 1439 });
 
 	const backgroundClass = isMobile
 		? styles.benefitsMobile
