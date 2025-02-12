@@ -1,10 +1,23 @@
-.benifits {
+.benefits {
 	position: relative;
-	background-image: url('../../../public/images/Benefits/Benefits.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+}
+
+.benefitsDesktop {
+	background-image: url('../../../public/images/Benefits/Benefits-desk.jpg');
 	height: 1030px;
+}
+
+.benefitsTablet {
+	background-image: url('../../../public/images/Benefits/Benefits-tab.jpg');
+	height: 800px;
+}
+
+.benefitsMobile {
+	background-image: url('../../../public/images/Benefits/Benefits-mob.jpg');
+	height: 600px;
 }
 
 .title {
@@ -25,16 +38,33 @@
 }
 
 .circleImage {
-	width: 700px;
-	height: 700px;
+	width: 328px;
+	height: 328px;
 	border-radius: 50%;
 	object-fit: cover;
 	box-shadow: 0px 4px 50px 3px #ffe3f6;
 	position: absolute;
-	right: 200px;
-	bottom: 80px;
-	top: 50%;
-	transform: translateY(-50%);
+}
+
+@media (min-width: 744px) {
+	.circleImage {
+		width: 454px;
+		height: 454px;
+		top: -10%;
+		right: 50%;
+		transform: translate(50%, 50%);
+	}
+}
+
+@media (min-width: 1440px) {
+	.circleImage {
+		width: 700px;
+		height: 700px;
+		right: 200px;
+		bottom: 80px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
 }
 
 .icon {
@@ -44,6 +74,5 @@
 	bottom: 80px;
 	top: 50%;
 	transform: translateY(-50%);
-
 	filter: drop-shadow(1px 2px 4px #4eb2a3);
 }
