@@ -1,5 +1,5 @@
 import './App.css';
-import Benifits from './components/Benefits/Benefits';
+import Benefits from './components/Benefits/Benefits';
 import Certification from './components/Certification/Certification/Certification';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
@@ -14,7 +14,7 @@ function App() {
 			<Hero />
 			<Introduce />
 			<Services />
-			<Benifits />
+			<Benefits />
 			<Certification />
 			<Video />
 		</>
