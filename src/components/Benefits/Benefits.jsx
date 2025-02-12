@@ -3,7 +3,7 @@ import Section from '../shared/Section/Section';
 import Title from '../shared/Title/Title';
 import styles from './Benefits.module.css';
 
-export default function Benifits() {
+export default function Benefits() {
 	return (
 		<Section className={styles.benifits}>
 			<Title className={styles.title}>Key Benefits</Title>
