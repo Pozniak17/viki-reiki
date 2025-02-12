@@ -1,10 +1,10 @@
-import Container from "../Container/Container";
-import styles from "./Section.module.css";
+import Container from '../Container/Container';
+import styles from './Section.module.css';
 
-export default function Section({ children }) {
-  return (
-    <section className={styles.section}>
-      <Container>{children}</Container>
-    </section>
-  );
+export default function Section({ children, className = '' }) {
+	return (
+		<section className={`${styles.section} ${className}`}>
+			<Container>{children}</Container>
+		</section>
+	);
 }

@@ -1,11 +1,10 @@
 .benifits {
 	position: relative;
-	/* background-color: green; */
 	background-image: url('../../../public/images/Benefits/Benefits.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	padding: 56px 16px;
+	height: 1030px;
 }
 
 .title {
@@ -23,4 +22,28 @@
 	display: inline-block; /* Щоб фон підлаштовувався під текст */
 	background-size: 100% auto; /* Розтягуємо фон на всю ширину тексту */
 	background-position: center; /* Вирівнюємо градієнт */
+}
+
+.circleImage {
+	width: 700px;
+	height: 700px;
+	border-radius: 50%;
+	object-fit: cover;
+	box-shadow: 0px 4px 50px 3px #ffe3f6;
+	position: absolute;
+	right: 200px;
+	bottom: 80px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.icon {
+	fill: var(--soft-white);
+	position: absolute;
+	right: 90px;
+	bottom: 80px;
+	top: 50%;
+	transform: translateY(-50%);
+
+	filter: drop-shadow(1px 2px 4px #4eb2a3);
 }
