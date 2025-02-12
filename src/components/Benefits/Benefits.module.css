@@ -50,9 +50,9 @@
 	.circleImage {
 		width: 454px;
 		height: 454px;
-		top: -10%;
-		right: 50%;
-		transform: translate(50%, 50%);
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 }
 
@@ -75,4 +75,12 @@
 	top: 50%;
 	transform: translateY(-50%);
 	filter: drop-shadow(1px 2px 4px #4eb2a3);
+}
+
+@media (min-width: 744px) {
+	.icon {
+		top: 54%;
+		left: 47%;
+		transform: translate(-50%, -50%); /* Центрує іконку */
+	}
 }
