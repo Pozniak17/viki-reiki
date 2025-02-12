@@ -33,11 +33,12 @@
 	display: inline-block;
 	background-size: 100% auto;
 	background-position: center;
+	width: 100%;
 }
 
 .visualContainer {
 	position: absolute;
-	top: 50%;
+	top: 54%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	display: flex;
@@ -69,6 +70,9 @@
 }
 
 @media (min-width: 744px) and (max-width: 1439px) {
+	.visualContainer {
+		top: 50%;
+	}
 	.circleImage {
 		width: 454px;
 		height: 454px;
