@@ -1,28 +1,35 @@
 :root {
-  /* background */
-  --White: "#FFFFFF";
-  --Footer: #212121;
+	/* background */
+	--White: '#FFFFFF';
+	--Footer: #212121;
 
-  /* body */
-  --Text: #2c2727;
-  --Grey: #414343;
-  --Beige: #ffdfcb;
+	/* body */
+	--Text: #2c2727;
+	--Grey: #414343;
+	--Beige: #ffdfcb;
 
-  /* title */
-  --Title: #00758f;
+	/* title */
+	--Title: #00758f;
 
-  /* Shadow & Stroke */
-  --Pink: #ffe3f6;
-  --Stroke: #dfdfdf;
-  --Skroll: #4194b7;
+	/* Shadow & Stroke */
+	--Pink: #ffe3f6;
+	--Stroke: #dfdfdf;
+	--Skroll: #4194b7;
 
-  /* Accent */
-  --Blue: #6091d4;
+	/* Accent */
+	--Blue: #6091d4;
+
+	--brand-gradient: linear-gradient(
+		139deg,
+		#02ff6b 0%,
+		#00a490 60%,
+		#0663ca 100%
+	);
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  line-height: 1.5;
+	font-family: 'Lato', sans-serif;
+	line-height: 1.5;
 }
 
 h1,
@@ -32,16 +39,16 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+	margin: 0;
 }
 
 ul,
 ol {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 img {
-  display: block;
-  max-width: 100%;
+	display: block;
+	max-width: 100%;
 }

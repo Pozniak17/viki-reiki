@@ -1,0 +1,26 @@
+.benifits {
+	position: relative;
+	background-color: green;
+	background-image: url('../../../public/images/Benifits/Benefits.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 56px 16px;
+}
+
+.title {
+	background: linear-gradient(
+		139deg,
+		rgba(2, 255, 107, 0.7) 7.81%,
+		rgba(0, 164, 144, 0.7) 59.41%,
+		rgba(6, 99, 202, 0.7) 93.81%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	/* Додаємо ці стилі для правильної ширини градієнта */
+	display: inline-block; /* Щоб фон підлаштовувався під текст */
+	background-size: 100% auto; /* Розтягуємо фон на всю ширину тексту */
+	background-position: center; /* Вирівнюємо градієнт */
+}
