@@ -46,17 +46,20 @@ export default function Benefits() {
 	return (
 		<Section className={`${styles.benefits} ${backgroundClass}`}>
 			<Title className={styles.title}>Key Benefits</Title>
-			<img
-				src={circleImageSrc}
-				alt="cirlce portrait"
-				className={styles.circleImage}
-			/>
-			<Icon
-				className={styles.icon}
-				id={iconId}
-				width={iconWidth}
-				height={iconHeight}
-			/>
+
+			<div className={styles.visualContainer}>
+				<img
+					src={circleImageSrc}
+					alt="cirlce portrait"
+					className={styles.circleImage}
+				/>
+				<Icon
+					className={styles.icon}
+					id={iconId}
+					width={iconWidth}
+					height={iconHeight}
+				/>
+			</div>
 		</Section>
 	);
 }

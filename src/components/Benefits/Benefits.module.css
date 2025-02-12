@@ -12,12 +12,12 @@
 
 .benefitsTablet {
 	background-image: url('../../../public/images/Benefits/Benefits-tab.jpg');
-	height: 800px;
+	height: 834px;
 }
 
 .benefitsMobile {
 	background-image: url('../../../public/images/Benefits/Benefits-mob.jpg');
-	height: 600px;
+	height: 508px;
 }
 
 .title {
@@ -30,11 +30,21 @@
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	display: inline-block;
+	background-size: 100% auto;
+	background-position: center;
+}
 
-	/* Додаємо ці стилі для правильної ширини градієнта */
-	display: inline-block; /* Щоб фон підлаштовувався під текст */
-	background-size: 100% auto; /* Розтягуємо фон на всю ширину тексту */
-	background-position: center; /* Вирівнюємо градієнт */
+.visualContainer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	height: auto;
 }
 
 .circleImage {
@@ -43,53 +53,38 @@
 	border-radius: 50%;
 	object-fit: cover;
 	box-shadow: 0px 4px 50px 3px #ffe3f6;
-	position: absolute;
-}
-
-@media (min-width: 744px) {
-	.circleImage {
-		width: 454px;
-		height: 454px;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-}
-
-@media (min-width: 1440px) {
-	.circleImage {
-		width: 700px;
-		height: 700px;
-		right: 200px;
-		bottom: 80px;
-		top: 50%;
-		transform: translateY(-50%);
-	}
+	position: relative;
+	object-fit: cover;
 }
 
 .icon {
 	fill: var(--soft-white);
 	position: absolute;
-	right: 90px;
-	bottom: 80px;
-	top: 50%;
-	transform: translateY(-50%);
 	filter: drop-shadow(1px 2px 4px #4eb2a3);
+	top: 57%;
+	left: 45%;
+	transform: translate(-50%, -50%);
 }
 
 @media (min-width: 744px) and (max-width: 1439px) {
-	.icon {
-		top: 54%;
-		left: 47%;
-		transform: translate(-50%, -50%); /* Центрує іконку */
+	.circleImage {
+		width: 454px;
+		height: 454px;
 	}
 }
 
 @media (min-width: 1440px) {
+	.visualContainer {
+		left: 64%;
+	}
+
+	.circleImage {
+		width: 700px;
+		height: 700px;
+	}
+
 	.icon {
-		right: 90px;
-		bottom: 80px;
+		left: 37%;
 		top: 50%;
-		transform: translateY(-50%);
 	}
 }
