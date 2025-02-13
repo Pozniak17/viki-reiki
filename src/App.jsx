@@ -6,6 +6,7 @@ import Introduce from "./components/Introduce/Introduce";
 import Services from "./components/Services/Services/Services";
 import Video from "./components/Video/Video";
 import Steps from "./components/Steps/Steps";
+import FAQs from "./components/FAQs/FAQs/FAQs";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Certification />
       <Video />
       <Steps />
+      <FAQs />
     </>
   );
 }

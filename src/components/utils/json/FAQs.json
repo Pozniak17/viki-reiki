@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "questions": "What is Reiki, and how does it work?",
+    "answers": "Reiki is a gentle energy healing practice that promotes relaxation and balance by channeling universal life energy through the hands of a practitioner."
+  },
+  {
+    "id": 2,
+    "questions": "What’s the difference between Reiki and traditional medicine?",
+    "answers": "Reiki is a holistic, complementary therapy that supports overall well-being, while traditional medicine focuses on diagnosing and treating specific medical conditions."
+  },
+  {
+    "id": 3,
+    "questions": "How do I know if Reiki is right for me?",
+    "answers": "If you're looking for relaxation, stress relief, or energetic balance, Reiki may be beneficial. You’re welcome to try a session and see how it feels for you."
+  },
+  {
+    "id": 4,
+    "questions": "Is Reiki only for people with health issues?",
+    "answers": "No, Reiki is for anyone seeking relaxation, emotional balance, or personal growth, regardless of health status."
+  },
+  {
+    "id": 5,
+    "questions": "Do you offer a free initial consultation?",
+    "answers": "Yes, I offer a brief initial consultation to discuss your needs and answer any questions."
+  },
+  {
+    "id": 6,
+    "questions": "How long does a typical Reiki session last?",
+    "answers": "A standard session lasts between 45 to 60 minutes."
+  },
+  {
+    "id": 7,
+    "questions": "How private and confidential is a Reiki session?",
+    "answers": "Reiki sessions are completely private and confidential, ensuring a safe and comfortable experience."
+  },
+  {
+    "id": 8,
+    "questions": "Is there a specific location for in-person Reiki sessions?",
+    "answers": "Yes, in-person sessions are available at the Athlone studio."
+  },
+  {
+    "id": 9,
+    "questions": "Do you offer Reiki sessions in-person, online, or both?",
+    "answers": "I offer both in-person and online Reiki sessions to accommodate different preferences."
+  }
+]

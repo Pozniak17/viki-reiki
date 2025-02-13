@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 import ServicesCard from "../ServicesCard/ServicesCard";
-import services from "../../utils/services.json";
+import services from "../../utils/json/services.json";
 // import styles from "./SliderCardList.module.css";
 
 export default function ServicesSlider() {
