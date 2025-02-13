@@ -6,6 +6,8 @@ import Hero from './components/Hero/Hero';
 import Introduce from './components/Introduce/Introduce';
 import Services from './components/Services/Services/Services';
 import Video from './components/Video/Video';
+import Steps from './components/Steps/Steps';
+import FAQs from './components/FAQs/FAQs/FAQs';
 
 function App() {
 	return (
@@ -17,6 +19,8 @@ function App() {
 			<Benefits />
 			<Certification />
 			<Video />
+			<Steps />
+			<FAQs />
 		</>
 	);
 }

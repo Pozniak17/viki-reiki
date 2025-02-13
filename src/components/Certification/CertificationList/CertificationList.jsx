@@ -1,6 +1,6 @@
 import CertificationCard from "../CertificationCard/CertificationCard";
 import styles from "./CertificationList.module.css";
-import certificates from "../../utils/certificates.json";
+import certificates from "../../utils/json/certificates.json";
 
 export default function CertificationList() {
   return (

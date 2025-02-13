@@ -8,7 +8,7 @@ import "swiper/css/scrollbar";
 // import styles from "./CertificationSlider.module.css";
 import CertificationCard from "../CertificationCard/CertificationCard";
 
-import certificates from "../../utils/certificates.json";
+import certificates from "../../utils/json/certificates.json";
 
 export default function CertificationSlider() {
   return (
