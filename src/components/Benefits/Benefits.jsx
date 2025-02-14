@@ -8,40 +8,30 @@ export default function Benefits() {
 	const isMobile = useMediaQuery({ maxWidth: 743 });
 	const isTablet = useMediaQuery({ minWidth: 744, maxWidth: 1439 });
 
-	const backgroundClass = isMobile
-		? styles.benefitsMobile
-		: isTablet
-		? styles.benefitsTablet
-		: styles.benefitsDesktop;
-
-	const circleImageSrc = isMobile
-		? '../../../public/images/Benefits/EllipsePix-mob.jpg'
-		: isTablet
-		? '../../../public/images/Benefits/EllipsePix-tab.jpg'
-		: '../../../public/images/Benefits/EllipsePix-desk.jpg';
-
-	const iconId = isMobile
-		? 'i-vecText-mob'
-		: isTablet
-		? 'i-vecText-tab'
-		: 'i-vecText-desk';
-
-	const sizes = {
-		mobile: { width: '408px', height: '386px' },
-		tablet: { width: '683.844px', height: '640.763px' },
-		desktop: { width: '1115.268px', height: '812.516px' },
+	const deviceAssets = {
+		mobile: {
+			backgroundClass: styles.benefitsMobile,
+			circleImageSrc: '/images/Benefits/EllipsePix-mob.jpg',
+			iconId: 'i-vecText-mob',
+			size: { width: '408px', height: '386px' },
+		},
+		tablet: {
+			backgroundClass: styles.benefitsTablet,
+			circleImageSrc: '/images/Benefits/EllipsePix-tab.jpg',
+			iconId: 'i-vecText-tab',
+			size: { width: '683.844px', height: '640.763px' },
+		},
+		desktop: {
+			backgroundClass: styles.benefitsDesktop,
+			circleImageSrc: '/images/Benefits/EllipsePix-desk.jpg',
+			iconId: 'i-vecText-desk',
+			size: { width: '1115.268px', height: '812.516px' },
+		},
 	};
 
-	const iconWidth = isMobile
-		? sizes.mobile.width
-		: isTablet
-		? sizes.tablet.width
-		: sizes.desktop.width;
-	const iconHeight = isMobile
-		? sizes.mobile.height
-		: isTablet
-		? sizes.tablet.height
-		: sizes.desktop.height;
+	const deviceType = isMobile ? 'mobile' : isTablet ? 'tablet' : 'desktop';
+	const { backgroundClass, circleImageSrc, iconId, size } =
+		deviceAssets[deviceType];
 
 	return (
 		<Section className={`${styles.benefits} ${backgroundClass}`}>
@@ -56,8 +46,8 @@ export default function Benefits() {
 				<Icon
 					className={styles.icon}
 					id={iconId}
-					width={iconWidth}
-					height={iconHeight}
+					width={size.width}
+					height={size.height}
 				/>
 			</div>
 		</Section>
