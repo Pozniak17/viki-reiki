@@ -7,6 +7,7 @@ import Services from "./components/Services/Services/Services";
 import Video from "./components/Video/Video";
 import Steps from "./components/Steps/Steps";
 import FAQs from "./components/FAQs/FAQs/FAQs";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Video />
       <Steps />
       <FAQs />
+      <Footer />
     </>
   );
 }

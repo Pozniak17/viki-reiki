@@ -1,0 +1,162 @@
+.footer {
+  background: var(--background-footer, #212121);
+}
+
+.item {
+  margin-bottom: 24px;
+}
+
+.title {
+  color: var(--Body-Soft-White, #f9fafa);
+  text-align: center;
+
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+}
+
+.title_list {
+  list-style-type: none;
+}
+
+.icon_list {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo_title {
+  display: none;
+}
+
+.copyright {
+  margin-top: 24px;
+  color: #fff;
+  text-align: center;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: 0.6px;
+}
+
+.footer_menu {
+  display: none;
+}
+
+@media (min-width: 744px) {
+  .item {
+    margin-bottom: 32px;
+  }
+
+  .item:last-child {
+    margin-bottom: 0;
+  }
+
+  .title {
+    text-align: start;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.22px;
+  }
+
+  .icon_list {
+    gap: 22px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo_title {
+    display: block;
+    color: var(--Body-Soft-White, #f9fafa);
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 112.5% */
+    letter-spacing: 0.5px;
+  }
+
+  .logo_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .copyright {
+    color: #fff;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .item {
+    margin-bottom: 40px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: 0.5px;
+  }
+
+  .icon_list {
+    gap: 24px;
+    margin-bottom: 0;
+  }
+
+  .logo_title {
+    font-size: 36px;
+    line-height: 36px; /* 100% */
+    letter-spacing: 0.5px;
+  }
+
+  .copyright {
+    margin-top: 52px;
+    text-align: end;
+  }
+
+  .footer_menu {
+    display: block;
+    list-style: none;
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    margin-bottom: 72px;
+  }
+
+  .menu_text {
+    color: var(--Body-Soft-White, #f9fafa);
+
+    /* Desktop/Headings/H4 */
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: 0.5px;
+  }
+
+  .third_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
