@@ -38,11 +38,25 @@ export default function Benefits() {
 			<Title className={styles.title}>Key Benefits</Title>
 
 			<div className={styles.visualContainer}>
-				<img
-					src={circleImageSrc}
-					alt="cirlce portrait"
-					className={styles.circleImage}
-				/>
+				<picture>
+					<source
+						srcSet="/images/Benefits/EllipsePix-mob.jpg"
+						media="(max-width: 743px)"
+					/>
+					<source
+						srcSet="/images/Benefits/EllipsePix-tab.jpg"
+						media="(min-width: 744px) and (max-width: 1439px)"
+					/>
+					<source
+						srcSet="/images/Benefits/EllipsePix-desk.jpg"
+						media="(min-width: 1440px)"
+					/>
+					<img
+						src={circleImageSrc}
+						alt="circle portrait"
+						className={styles.circleImage}
+					/>
+				</picture>
 				<Icon
 					className={styles.icon}
 					id={iconId}
