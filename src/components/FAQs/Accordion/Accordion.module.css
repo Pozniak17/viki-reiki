@@ -13,12 +13,12 @@
 }
 
 .accordion_item:hover,
-:focus {
+.accordion_item:focus {
   border: 1px solid var(--button-primary-hover, #f6a048);
 }
 
 .image:hover,
-:focus {
+.image:focus {
   color: #f6a048;
 }
 
@@ -96,9 +96,6 @@
     font-weight: 700;
     line-height: 32px; /* 133.333% */
     letter-spacing: 0.5px;
-  }
-
-  .accordion_header {
   }
 
   .answers {

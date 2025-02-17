@@ -61,9 +61,8 @@
   line-height: 24px; /* 150% */
   letter-spacing: 0.08px;
 }
-
 .hero_button {
-  z-index: 100;
+  z-index: 101;
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
@@ -83,10 +82,17 @@
   border: none;
   cursor: pointer;
 }
+
 .hero_button:hover,
-:focus {
+.hero_button:focus {
   background: #f6a048;
+  color: #fff;
 }
+
+.hero_button:active {
+  color: #fff;
+}
+
 .hero_imageLeaves {
   position: absolute;
 }
