@@ -8,6 +8,7 @@ import Video from "./components/Video/Video";
 import Steps from "./components/Steps/Steps";
 import FAQs from "./components/FAQs/FAQs/FAQs";
 import Footer from "./components/Footer/Footer";
+import Benefits from "./components/Benefits/Benefits/Benefits";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Hero />
       <Introduce />
       <Services />
+      <Benefits />
       <Certification />
       <Video />
       <Steps />

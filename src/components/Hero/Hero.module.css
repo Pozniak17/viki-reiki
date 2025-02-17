@@ -61,6 +61,7 @@
   line-height: 24px; /* 150% */
   letter-spacing: 0.08px;
 }
+
 .hero_button {
   z-index: 100;
   display: inline-flex;
