@@ -75,12 +75,11 @@
   .questions {
     color: var(--Body-Grey, #414343);
 
-    /* Tablet/Headings/H4 bold */
     font-family: Lato;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
-    line-height: 28px; /* 127.273% */
+    line-height: 28px;
     letter-spacing: 0.22px;
   }
 }
@@ -94,13 +93,13 @@
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 32px; /* 133.333% */
+    line-height: 32px;
     letter-spacing: 0.5px;
   }
 
   .answers {
     margin-top: 24px;
     font-size: 18px;
-    line-height: 28px; /* 155.556% */
+    line-height: 28px;
   }
 }
