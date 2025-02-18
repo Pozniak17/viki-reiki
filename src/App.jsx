@@ -9,6 +9,7 @@ import Steps from "./components/Steps/Steps";
 import FAQs from "./components/FAQs/FAQs/FAQs";
 import Footer from "./components/Footer/Footer";
 import Benefits from "./components/Benefits/Benefits/Benefits";
+import Registation from "./components/Registation/Registration/Registation";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Video />
       <Steps />
       <FAQs />
+      <Registation />
       <Footer />
     </>
   );
