@@ -1,13 +1,20 @@
 .hero {
   position: relative;
   background-color: green;
-  background-image: url("../../../public/images/Hero/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
+  background-image: url("../../../public/images/Hero/Mobile/Hero-mobile-1x.jpg");
   padding: 56px 16px;
 }
+
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: url("../../../public/images/Hero/Mobile/Hero-mobile-2x.jpg");
+  }
+}
+
 .hero_circle {
   position: relative;
   padding: 74px 30px;
@@ -95,13 +102,15 @@
 
 .hero_imageLeaves {
   position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .hero_cirleText {
   position: absolute;
 
-  width: 374px;
-  height: 374px;
+  width: 337.962px;
+  height: 374.083px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

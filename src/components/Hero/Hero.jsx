@@ -1,12 +1,23 @@
 import { motion } from "framer-motion";
 import styles from "./Hero.module.css";
-import leaves from "../../../public/images/Hero/leaves.png";
 import text from "../../../public/images/Hero/text.png";
 
+import { useState } from "react";
+import CustomModal from "../CustomModal/CustomModal";
+
 export default function Hero() {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   return (
     <section className={styles.hero}>
-      <img src={text} alt="text" className={styles.hero_cirleText} />
+      <picture>
+        {/* Дефолт */}
+        <img
+          src="/images/Hero/Mobile/Text-mobile-1x.png"
+          alt="Hero text"
+          className={styles.hero_cirleText}
+        />
+      </picture>
+
       <div className={styles.hero_circle}>
         <motion.h1
           className={styles.hero_title}
@@ -25,14 +36,37 @@ export default function Hero() {
           Take the First Step Toward Your Health and Happiness
         </motion.h2>
         <motion.button
+          onClick={() => setModalIsOpen(true)}
           className={styles.hero_button}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95, originX: 0.5, originY: 0.5 }}
         >
           <span>Start Your Journey</span>
         </motion.button>
-        <img src={leaves} alt="leaves" className={styles.hero_imageLeaves} />
+
+        <picture>
+          {/* Мобільні*/}
+          <source
+            srcSet="/images/Hero/Mobile/Leaves-mobile-1x.png 1x, /images/Hero/Mobile/Leaves-mobile-2x.png 2x"
+            media="(max-width: 743px)"
+          />
+
+          {/* Дефолт*/}
+          <img
+            className={styles.hero_imageLeaves}
+            src="/images/Hero/Mobile/Leaves-mobile-1x.png"
+            alt="Hero leaves"
+          />
+        </picture>
       </div>
+      <CustomModal isOpen={modalIsOpen} onClose={() => setModalIsOpen(false)}>
+        <h2>Вітаю</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus officiis ex quibusdam velit blanditiis earum recusandae
+          in ipsa cumque repellendus!
+        </p>
+      </CustomModal>
     </section>
   );
 }
