@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import styles from "./Hero.module.css";
-import text from "../../../public/images/Hero/text.png";
 
 import { useState } from "react";
 import CustomModal from "../CustomModal/CustomModal";
@@ -10,6 +9,21 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
       <picture>
+        {/* Десктоп */}
+        <source
+          srcSet="/images/Hero/Desktop/Text-desktop-1x.png 1x, /images/Hero/Desktop/Text-desktop-2x.png 2x"
+          media="(min-width: 1440px)"
+        />
+        {/* Таблет */}
+        <source
+          srcSet="/images/Hero/Tablet/Text-tablet-1x.png 1x, /images/Hero/Tablet/Text-tablet-2x.png 2x"
+          media="(min-width: 744px)"
+        />
+        {/* Мобільні*/}
+        <source
+          srcSet="/images/Hero/Mobile/Text-mobile-1x 1x, /images/Hero/Mobile/Text-mobile-2x.png 2x"
+          media="(max-width: 743px)"
+        />
         {/* Дефолт */}
         <img
           src="/images/Hero/Mobile/Text-mobile-1x.png"
@@ -45,6 +59,17 @@ export default function Hero() {
         </motion.button>
 
         <picture>
+          {/* Десктоп */}
+          <source
+            srcSet="/images/Hero/Desktop/Leaves-desktop-1x.png 1x, /images/Hero/Desktop/Leaves-desktop-2x.png 2x"
+            media="(min-width: 1440px)"
+          />
+
+          {/* Таблет */}
+          <source
+            srcSet="/images/Hero/Tablet/Leaves-tablet-1x.png 1x, /images/Hero/Tablet/Leaves-tablet-2x.png 2x"
+            media="(min-width: 744px)"
+          />
           {/* Мобільні*/}
           <source
             srcSet="/images/Hero/Mobile/Leaves-mobile-1x.png 1x, /images/Hero/Mobile/Leaves-mobile-2x.png 2x"
