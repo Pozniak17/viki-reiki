@@ -1,5 +1,4 @@
 .benefits {
-  background-image: url("../../../../public/images/Benefits/background.jpg");
   background-color: black;
   height: 508px;
   padding-top: 32px;
@@ -7,6 +6,36 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-image: url("/images/Benefits/Mobile/Benefits-mobile-1x.jpg");
+}
+
+@media (min-resolution: 192dpi) {
+  .benefits {
+    background-image: url("/images/Benefits/Mobile/Benefits-mobile-2x.jpg");
+  }
+}
+
+.wrapper {
+  position: relative;
+}
+
+.meditation_image {
+  width: 328px;
+  height: 328px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 328px;
+
+  box-shadow: 0px 4px 50px 3px var(--stroke-shadows-pink, #ffe3f6);
+}
+
+.text_icon {
+  position: absolute;
+  width: 408px;
+  height: 386px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
 }
 
 .title {
@@ -32,8 +61,26 @@
 
 @media (min-width: 744px) {
   .benefits {
+    background-image: url("/images/Benefits/Tablet/Benefits-tablet-1x.jpg");
     padding: 56px 24px;
     height: 834px;
+  }
+
+  @media (min-resolution: 192dpi) and (min-width: 744px) {
+    .benefits {
+      background-image: url("/images/Benefits/Tablet/Benefits-tablet-2x.jpg");
+    }
+  }
+
+  .meditation_image {
+    width: 454px;
+    height: 454px;
+  }
+
+  .text_icon {
+    width: 683.844px;
+    height: 640.763px;
+    transform: translate(-54%, -47%);
   }
 
   .title {
@@ -47,8 +94,20 @@
 @media (min-width: 1440px) {
   .benefits {
     padding: 64px 120px;
-    background-image: url("../../../../public/images/Benefits/Desktop/background.jpg");
+    background-image: url("/images/Benefits/Desktop/Benefits-desktop-1x.jpg");
     height: 1030px;
+  }
+
+  @media (min-resolution: 192dpi) and (min-width: 1440px) {
+    .benefits {
+      background-image: url("/images/Benefits/Desktop/Benefits-desktop-2x.jpg");
+    }
+  }
+
+  .meditation_image {
+    width: 700px;
+    height: 700px;
+    border-radius: 700px;
   }
 
   .title {
@@ -57,5 +116,11 @@
     font-size: 48px;
     line-height: 56px;
     letter-spacing: 0.48px;
+  }
+
+  .text_icon {
+    width: 1115.268px;
+    height: 812.516px;
+    transform: translate(-59%, -50%);
   }
 }

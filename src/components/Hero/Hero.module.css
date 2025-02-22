@@ -5,13 +5,13 @@
   background-position: center;
   background-size: cover;
 
-  background-image: url("public/images/Hero/Mobile/Hero-mobile-1x.jpg");
+  background-image: url("/images/Hero/Mobile/Hero-mobile-1x.jpg");
   padding: 56px 16px;
 }
 
 @media (min-resolution: 192dpi) {
   .hero {
-    background-image: url("public/images/Hero/Mobile/Hero-mobile-2x.jpg");
+    background-image: url("/images/Hero/Mobile/Hero-mobile-2x.jpg");
   }
 }
 
