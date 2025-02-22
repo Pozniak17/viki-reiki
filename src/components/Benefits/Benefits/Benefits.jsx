@@ -14,7 +14,7 @@ export default function Benefits() {
       <div className={styles.wrapper}>
         {isMobileScreen && (
           <img
-            src="/public/icons/Benefits/Mobile/Text-mobile.svg"
+            src="/icons/Benefits/Mobile/Text-mobile.svg"
             alt="Text"
             className={styles.text_icon}
           />
@@ -22,7 +22,7 @@ export default function Benefits() {
 
         {isTabletScreen && (
           <img
-            src="/public/icons/Benefits/Tablet/Text-tablet.svg"
+            src="/icons/Benefits/Tablet/Text-tablet.svg"
             alt="Text"
             className={styles.text_icon}
           />
@@ -30,7 +30,7 @@ export default function Benefits() {
 
         {isDesktopScreen && (
           <img
-            src="/public/icons/Benefits/Desktop/Text-desktop.svg"
+            src="/icons/Benefits/Desktop/Text-desktop.svg"
             alt="Text"
             className={styles.text_icon}
           />
