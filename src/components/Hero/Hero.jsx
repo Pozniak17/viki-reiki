@@ -84,13 +84,11 @@ export default function Hero() {
           />
         </picture>
       </div>
+
       <CustomModal isOpen={modalIsOpen} onClose={() => setModalIsOpen(false)}>
-        <h2>Вітаю</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Necessitatibus officiis ex quibusdam velit blanditiis earum recusandae
-          in ipsa cumque repellendus!
-        </p>
+        <h2>Welcome!</h2>
+        <p>Start your journey here</p>
+        <button>Start Your Journey</button>
       </CustomModal>
     </section>
   );
