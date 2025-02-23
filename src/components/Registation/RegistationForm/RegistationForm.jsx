@@ -24,7 +24,7 @@ export default function RegistationForm() {
                 <Field
                   type="text"
                   name="username"
-                  placeholder="Name"
+                  placeholder="Name*"
                   className={styles.field}
                 />
               </li>
@@ -33,7 +33,7 @@ export default function RegistationForm() {
                 <Field
                   type="email"
                   name="email"
-                  placeholder="Email"
+                  placeholder="Email*"
                   className={styles.field}
                 />
               </li>
@@ -42,7 +42,7 @@ export default function RegistationForm() {
                 <Field
                   type="number"
                   name="phone"
-                  placeholder="Phone"
+                  placeholder="Phone*"
                   className={styles.field}
                 />
               </li>

@@ -36,7 +36,8 @@ p {
 }
 
 ul,
-ol {
+ol,
+button {
   margin: 0;
   padding: 0;
 }
