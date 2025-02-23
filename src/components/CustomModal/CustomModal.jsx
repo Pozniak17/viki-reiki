@@ -14,8 +14,7 @@ const initialValues = {
 };
 
 export default function CustomModal({ isOpen, onClose }) {
-  // мочим
-  //  скрооол)
+  //  мочим скрооол)
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "auto";
     return () => {
