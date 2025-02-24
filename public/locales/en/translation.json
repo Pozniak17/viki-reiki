@@ -1,0 +1,139 @@
+{
+  "header": {
+    "nav1": "My Story",
+    "nav2": "Reiki Sessions",
+    "nav3": "Calendar",
+    "nav4": "FAQs",
+    "nav5": "Contact"
+  },
+
+  "hero": {
+    "heroTitle": "Reiki Master",
+    "heroText": "Take the First Step Toward Your Health and Happiness",
+    "heroButton": "Start Your Journey"
+  },
+
+  "introduce": {
+    "introduceTitle": "Viktoria Drachuk",
+    "introduceText": "As a professional Reiki Master, I help to find balance and inner strength, leading people on the path of self-discovery through healing and support.",
+    "buttons": {
+      "introduceButton1": "Schedule now",
+      "introduceButton2": "Service"
+    }
+  },
+
+  "services": {
+    "servicesTitle": "Healing Services Offered",
+    "servicesText": "These are the different ways I can support your wellness journey:",
+    "cards": {
+      "servicesCard1": {
+        "title": "Individual Session",
+        "text": "Reiki is a profound energy healing practice where I, as a practitioner, assist clients in accessing their inner peace and balance. Through gentle touch and energy transfer, I guide individuals to release blockages, promote healing, and enhance their well-being."
+      },
+      "servicesCard2": {
+        "title": "Group Sessions",
+        "text": "Reiki is a unique method of energy healing rooted in ancient Japanese traditions. In group sessions, I, as a Reiki practitioner, help clients restore their energy and harmony through touch, meditation, and alignment with positive vibrations."
+      },
+
+      "servicesCard3": {
+        "title": "Reiki Meditation",
+        "text": "Reiki meditation provides a unique opportunity to explore energy healing within. As a certified guide, I lead individuals through meditative practices rooted in Reiki principles, helping them tap into healing energy for self-awareness, balance, and relaxation. "
+      },
+
+      "servicesCard4": {
+        "title": "Reiki Training",
+        "text": "Reiki training offers a unique opportunity to learn energy healing techniques. As a certified instructor, I guide students through the principles of Reiki, enabling them to harness healing energy for themselves and others. This journey promotes personal growth."
+      }
+    }
+  },
+
+  "benefits": {
+    "title": "Key Benefits"
+  },
+
+  "certification": {
+    "title": "Qualification and Сertification",
+    "text": "I proudly share my Reiki Master certificate, along with achievements from other training events. May this inspire you to begin your own journey of growth and healing through Reiki.",
+    "cards": {
+      "certificationCard1": "Reiki training offers a unique opportunity to learn energy healing techniques.",
+      "certificationCard2": "Reiki training offers a unique opportunity to learn energy healing techniques.",
+      "certificationCard3": "Reiki training offers a unique opportunity to learn energy healing techniques.",
+      "certificationCard4": "Reiki training offers a unique opportunity to learn energy healing techniques."
+    }
+  },
+
+  "video": {
+    "title": "Video Introduce"
+  },
+
+  "steps": {
+    "title": "How does Reiki Practice Works",
+    "text": "Reiki is an energy healing practice that promotes relaxation, balance, and healing by channeling life force energy.",
+    "list": {
+      "step1": {
+        "title": "Book an appointment",
+        "text": "This step will help you make yourself known and receive valuable feedback."
+      },
+      "step2": {
+        "title": "Receive your tailored consultation",
+        "text": "This step provides you with personalized insights and expert guidance to address your unique needs and goals."
+      },
+      "step3": {
+        "title": "Ongoing and circular care",
+        "text": "Experience continuous, interconnected support designed to nurture and sustain your well-being over time."
+      },
+      "step4": {
+        "title": "Begin your treatment and program",
+        "text": "Take the first step toward achieving your goals with a personalized plan designed just for you."
+      }
+    }
+  },
+
+  "FAQs": {
+    "accordion": {
+      "questions": {
+        "questions1": "What is Reiki, and how does it work?",
+        "questions2": "What’s the difference between Reiki and traditional medicine?",
+        "questions3": "How do I know if Reiki is right for me?",
+        "questions4": "Is Reiki only for people with health issues?",
+        "questions5": "Do you offer a free initial consultation?",
+        "questions6": "How long does a typical Reiki session last?",
+        "questions7": "How private and confidential is a Reiki session?",
+        "questions8": "Is there a specific location for in-person Reiki sessions?",
+        "questions9": "Do you offer Reiki sessions in-person, online, or both?"
+      }
+    },
+    "answers": {
+      "answers1": "Reiki is a gentle energy healing practice that promotes relaxation and balance by channeling universal life energy through the hands of a practitioner.",
+      "answers2": "Reiki is a holistic, complementary therapy that supports overall well-being, while traditional medicine focuses on diagnosing and treating specific medical conditions.",
+      "answers3": "If you're looking for relaxation, stress relief, or energetic balance, Reiki may be beneficial. You’re welcome to try a session and see how it feels for you.",
+      "answers4": "No, Reiki is for anyone seeking relaxation, emotional balance, or personal growth, regardless of health status.",
+      "answers5": "Yes, I offer a brief initial consultation to discuss your needs and answer any questions.",
+      "answers6": "A standard session lasts between 45 to 60 minutes.",
+      "answers7": "Reiki sessions are completely private and confidential, ensuring a safe and comfortable experience.",
+      "answers8": "Yes, in-person sessions are available at the Athlone studio.",
+      "answers9": "I offer both in-person and online Reiki sessions to accommodate different preferences."
+    }
+  },
+  "registation": {
+    "title": "Register for the Session",
+    "text": "Let’s Get Started! Claim Your 30-Minute Free Consultation Today:",
+    "placeholders": {
+      "name": "Name*",
+      "email": "Email*",
+      "phone": "Phone*",
+      "message": "Message"
+    },
+    "button": "Book Session"
+  },
+
+  "footer": {
+    "contacts": {
+      "address1": "Athlone, Ireland",
+      "number1": "+35 (85) 116-63-26",
+      "address2": "Kyiv, Ukraine",
+      "number2": "+38 (097) 300-78-41"
+    },
+    "copyright": "Created by CodeStudioUA@2025"
+  }
+}
