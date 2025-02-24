@@ -38,65 +38,89 @@ export default function CustomModal({ isOpen, onClose }) {
         <img src={IconClose} alt="close button" />
       </button>
 
-      <h2 className={styles.title}>Register for the Session</h2>
+      <div className={styles.wrapper}>
+        <div>
+          <h2 className={styles.title}>Register for the Session</h2>
+          <picture>
+            {/* Десктоп */}
+            <source
+              srcSet="/images/Modal/Desktop/Modal-desktop-1x.jpg 1x, /images/Modal/Desktop/Modal-desktop-2x.jpg 2x"
+              media="(min-width: 1440px)"
+            />
 
-      <Formik
-        initialValues={initialValues}
-        onSubmit={handleSubmit}
-        preventScroll
-      >
-        {({ handleSubmit }) => (
-          <>
-            <Form className={styles.form}>
-              <ul className={styles.list}>
-                <li className={styles.item}>
-                  <Field
-                    type="text"
-                    name="username"
-                    placeholder="Name"
-                    className={styles.field}
-                  />
-                </li>
+            {/* Таблет */}
+            <source
+              srcSet="/images/Modal/Tablet/Modal-tablet-1x.jpg 1x, /images/Modal/Tablet/Modal-tablet-2x.jpg 2x"
+              media="(min-width: 744px)"
+            />
 
-                <li className={styles.item}>
-                  <Field
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    className={styles.field}
-                  />
-                </li>
+            <img
+              className={styles.modal_image}
+              src="/images/Modal/Tablet/Modal-tablet-1x.jpg"
+              alt="Meditation"
+            />
+          </picture>
+        </div>
+        <div>
+          <Formik
+            initialValues={initialValues}
+            onSubmit={handleSubmit}
+            preventScroll
+          >
+            {({ handleSubmit }) => (
+              <>
+                <Form className={styles.form}>
+                  <ul className={styles.list}>
+                    <li className={styles.item}>
+                      <Field
+                        type="text"
+                        name="username"
+                        placeholder="Name"
+                        className={styles.field}
+                      />
+                    </li>
 
-                <li className={styles.item}>
-                  <Field
-                    type="number"
-                    name="phone"
-                    placeholder="Phone"
-                    className={styles.field}
-                  />
-                </li>
+                    <li className={styles.item}>
+                      <Field
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        className={styles.field}
+                      />
+                    </li>
 
-                <li className={styles.item}>
-                  <Field
-                    className={styles.textarea}
-                    as="textarea"
-                    name="message"
-                    placeholder="Message"
-                  ></Field>
-                </li>
-              </ul>
-            </Form>
-            {/* Кнопка поза формою, але прив’язана до handleSubmit */}
-            <button
-              type="button"
-              onClick={handleSubmit}
-              className={styles.button}
-            >
-              Submit
-            </button>
-          </>
-        )}
-      </Formik>
+                    <li className={styles.item}>
+                      <Field
+                        type="number"
+                        name="phone"
+                        placeholder="Phone"
+                        className={styles.field}
+                      />
+                    </li>
+
+                    <li className={styles.item}>
+                      <Field
+                        className={styles.textarea}
+                        as="textarea"
+                        name="message"
+                        placeholder="Message"
+                      ></Field>
+                    </li>
+                  </ul>
+                </Form>
+                {/* Кнопка поза формою, але прив’язана до handleSubmit */}
+                <button
+                  type="button"
+                  onClick={handleSubmit}
+                  className={styles.button}
+                >
+                  Submit
+                </button>
+              </>
+            )}
+          </Formik>
+        </div>
+      </div>
     </Modal>
   );
 }
