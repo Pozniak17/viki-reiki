@@ -3,7 +3,7 @@
   color: #2c2727;
   text-align: center;
 
-  font-family: Lato;
+  /* font-family: Lato; */
   font-size: 18px;
   line-height: 28px;
 }
@@ -31,7 +31,7 @@
 }
 
 .steps_number {
-  font-family: Lato;
+  /* font-family: Lato; */
   color: #0663ca;
   padding: 16px;
 
@@ -56,8 +56,7 @@
   margin-bottom: 8px;
   color: var(--Body-Text, #2c2727);
 
-  /* Mobile/Headings/H3 */
-  font-family: Lato;
+  /* font-family: Lato; */
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -70,8 +69,7 @@
   text-overflow: ellipsis;
   opacity: 0.6;
 
-  /* Mobile/Body/Medium */
-  font-family: Lato;
+  /* font-family: Lato; */
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -103,8 +101,7 @@
   .steps_title {
     color: var(--Body-Text, #2c2727);
 
-    /* Tablet/Headings/H3 */
-    font-family: Lato;
+    /* font-family: Lato; */
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -117,8 +114,7 @@
     color: var(--Body-Grey, #414343);
     text-overflow: ellipsis;
 
-    /* Tablet/Body/Medium */
-    font-family: Lato;
+    /* font-family: Lato; */
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -131,7 +127,7 @@
 
   .steps_number {
     padding: 17px 20px;
-    font-family: Lato;
+    /* font-family: Lato; */
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
@@ -160,8 +156,7 @@
   .steps_title {
     color: var(--Body-Text, #2c2727);
 
-    /* Desktop/Headings/H3 */
-    font-family: Lato;
+    /* font-family: Lato; */
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -173,8 +168,7 @@
     color: var(--Body-Grey, #414343);
     text-overflow: ellipsis;
 
-    /* Desktop/Body/Medium */
-    font-family: Lato;
+    /* font-family: Lato; */
     font-size: 18px;
     font-style: normal;
     font-weight: 400;

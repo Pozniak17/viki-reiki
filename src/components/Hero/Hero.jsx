@@ -1,10 +1,12 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import styles from "./Hero.module.css";
 
-import { useState } from "react";
 import CustomModal from "../CustomModal/CustomModal";
 
 export default function Hero() {
+  const { t } = useTranslation();
   const [modalIsOpen, setModalIsOpen] = useState(false);
   return (
     <section className={styles.hero}>
@@ -39,7 +41,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          Reiki Master
+          {t("hero.heroTitle")}
         </motion.h1>
         <motion.h2
           className={styles.hero_text}
@@ -47,7 +49,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          Take the First Step Toward Your Health and Happiness
+          {t("hero.heroText")}
         </motion.h2>
         <motion.button
           onClick={() => setModalIsOpen(true)}
@@ -55,7 +57,7 @@ export default function Hero() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95, originX: 0.5, originY: 0.5 }}
         >
-          <span>Start Your Journey</span>
+          <span>{t("hero.heroButton")}</span>
         </motion.button>
 
         <picture>

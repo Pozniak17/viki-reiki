@@ -90,6 +90,7 @@
   },
 
   "FAQs": {
+    "title": "FAQs",
     "accordion": {
       "questions": {
         "questions1": "What is Reiki, and how does it work?",
@@ -115,7 +116,7 @@
       "answers9": "I offer both in-person and online Reiki sessions to accommodate different preferences."
     }
   },
-  "registation": {
+  "registration": {
     "title": "Register for the Session",
     "text": "Let’s Get Started! Claim Your 30-Minute Free Consultation Today:",
     "placeholders": {

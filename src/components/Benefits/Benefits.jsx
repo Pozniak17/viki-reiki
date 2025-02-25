@@ -1,15 +1,17 @@
 import { useMediaQuery } from "react-responsive";
 // import { motion, AnimatePresence } from "framer-motion";
 import styles from "./Benefits.module.css";
+import { useTranslation } from "react-i18next";
 
 export default function Benefits() {
+  const { t } = useTranslation();
   const isMobileScreen = useMediaQuery({ maxWidth: 743 });
   const isTabletScreen = useMediaQuery({ minWidth: 744, maxWidth: 1439 });
   const isDesktopScreen = useMediaQuery({ minWidth: 1440 });
 
   return (
     <section className={styles.benefits}>
-      <h2 className={styles.title}>Key Benefits</h2>
+      <h2 className={styles.title}>{t("benefits.title")}</h2>
 
       <div className={styles.wrapper}>
         {isMobileScreen && (

@@ -10,7 +10,7 @@
   color: var(--Body-Soft-White, #f9fafa);
   text-align: center;
 
-  font-family: Lato;
+  /* font-family: Lato; */
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -43,7 +43,7 @@
   margin-top: 24px;
   color: #fff;
   text-align: center;
-  font-family: Lato;
+  /* font-family: Lato; */
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -83,7 +83,7 @@
   .logo_title {
     display: block;
     color: var(--Body-Soft-White, #f9fafa);
-    font-family: Lato;
+    /* font-family: Lato; */
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -99,7 +99,7 @@
 
   .copyright {
     color: #fff;
-    font-family: Lato;
+    /* font-family: Lato; */
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.6px;
@@ -145,8 +145,7 @@
   .menu_text {
     color: var(--Body-Soft-White, #f9fafa);
 
-    /* Desktop/Headings/H4 */
-    font-family: Lato;
+    /* font-family: Lato; */
     font-size: 24px;
     font-style: normal;
     font-weight: 400;

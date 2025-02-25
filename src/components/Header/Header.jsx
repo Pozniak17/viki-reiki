@@ -3,8 +3,12 @@ import styles from "./Header.module.css";
 import logo from "/public/icons/logo.svg";
 import menu from "/public/icons/burger.svg";
 import language from "/public/icons/language.svg";
+import { useTranslation } from "react-i18next";
+// import { changeLanguage } from "i18next";
 
 export default function Header() {
+  const { t, i18n } = useTranslation();
+
   return (
     <header className={styles.header}>
       <Container>
@@ -23,22 +27,52 @@ export default function Header() {
           <nav>
             <ul className={styles.menu_list}>
               <li>
-                <p className={styles.menu_text}>My Story</p>
+                <p className={styles.menu_text}>{t("header.nav1")}</p>
               </li>
               <li>
-                <p className={styles.menu_text}>Reiki Sessions</p>
+                <p className={styles.menu_text}>{t("header.nav2")}</p>
               </li>
               <li>
-                <p className={styles.menu_text}>Calendar</p>
+                <p className={styles.menu_text}>{t("header.nav3")}</p>
               </li>
               <li>
-                <p className={styles.menu_text}>FAQs</p>
+                <p className={styles.menu_text}>{t("header.nav4")}</p>
               </li>
               <li>
-                <p className={styles.menu_text}>Contact</p>
+                <p className={styles.menu_text}>{t("header.nav5")}</p>
               </li>
-              <li>
-                <img src={language} alt="change language" />
+
+              <li className={styles.language_switcher}>
+                <img
+                  className={styles.language_icon}
+                  src={language}
+                  alt="change language"
+                />
+
+                <div className={styles.language_wrapper}>
+                  <ul className={styles.language_list}>
+                    <li>
+                      <button
+                        className={`${styles.language_button} ${
+                          i18n.language === "en" ? styles.active : ""
+                        }`}
+                        onClick={() => i18n.changeLanguage("en")}
+                      >
+                        Eng
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        className={`${styles.language_button} ${
+                          i18n.language === "ua" ? styles.active : ""
+                        }`}
+                        onClick={() => i18n.changeLanguage("ua")}
+                      >
+                        Ukr
+                      </button>
+                    </li>
+                  </ul>
+                </div>
               </li>
             </ul>
           </nav>

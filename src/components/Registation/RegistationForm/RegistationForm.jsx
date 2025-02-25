@@ -1,5 +1,6 @@
 import { Field, Form, Formik } from "formik";
 import styles from "./RegistationForm.module.css";
+import { useTranslation } from "react-i18next";
 
 const initialValues = {
   username: "",
@@ -9,6 +10,7 @@ const initialValues = {
 };
 
 export default function RegistationForm() {
+  const { t } = useTranslation();
   function handleSubmit(values, actions) {
     console.log(values);
     actions.resetForm();
@@ -24,7 +26,7 @@ export default function RegistationForm() {
                 <Field
                   type="text"
                   name="username"
-                  placeholder="Name*"
+                  placeholder={t("registration.placeholders.name")}
                   className={styles.field}
                 />
               </li>
@@ -33,7 +35,7 @@ export default function RegistationForm() {
                 <Field
                   type="email"
                   name="email"
-                  placeholder="Email*"
+                  placeholder={t("registration.placeholders.email")}
                   className={styles.field}
                 />
               </li>
@@ -42,7 +44,7 @@ export default function RegistationForm() {
                 <Field
                   type="number"
                   name="phone"
-                  placeholder="Phone*"
+                  placeholder={t("registration.placeholders.phone")}
                   className={styles.field}
                 />
               </li>
@@ -52,7 +54,7 @@ export default function RegistationForm() {
                   className={styles.textarea}
                   as="textarea"
                   name="message"
-                  placeholder="Message"
+                  placeholder={t("registration.placeholders.message")}
                 ></Field>
               </li>
             </ul>
@@ -63,7 +65,7 @@ export default function RegistationForm() {
             onClick={handleSubmit}
             className={styles.button}
           >
-            Submit
+            {t("registration.button")}
           </button>
         </>
       )}

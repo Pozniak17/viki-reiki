@@ -47,7 +47,7 @@
   text-shadow: 0px 4px 40px var(--stroke-shadows-pink, #ffe3f6);
 
   /* Mobile/Headings/H1 */
-  font-family: Lato;
+
   font-size: 44px;
   font-style: normal;
   font-weight: 800;
@@ -60,8 +60,6 @@
   color: var(--Body-Soft-White, #f9fafa);
   text-align: center;
 
-  /* Mobile/Body/Lead */
-  font-family: Lato;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -75,7 +73,6 @@
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-family: Lato;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -148,9 +145,6 @@
     padding: 18px 48px;
 
     color: #fff;
-
-    /* Tablet/Headings/H4 bold */
-    font-family: Lato;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -197,9 +191,6 @@
     padding: 18px 48px;
 
     color: #fff;
-
-    /* Desktop/Headings/H4 bold */
-    font-family: Lato;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
