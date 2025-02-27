@@ -27,7 +27,7 @@ export default function MobileMenu({ isOpen, onToggle }) {
         </ul>
 
         <div className={styles.logo_wrapper}>
-          <img src="../../../public/icons/logo.svg" alt="logo" />
+          <img src="/icons/logo.svg" alt="logo" />
           <p className={styles.logo_text}>Viki Reiki</p>
         </div>
 
