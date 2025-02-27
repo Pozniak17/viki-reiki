@@ -97,6 +97,7 @@
 
 @media (min-width: 1440px) {
   .form {
+    width: 486px;
     padding: 40px 24px;
   }
 
@@ -105,6 +106,7 @@
   }
 
   .button {
+    width: 486px;
     margin-top: 32px;
   }
 }

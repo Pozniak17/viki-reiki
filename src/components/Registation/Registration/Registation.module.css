@@ -31,11 +31,12 @@
 @media (min-width: 1440px) {
   .wrapper {
     display: flex;
+    align-items: center;
     gap: 24px;
   }
 
   .image {
-    width: 682px;
+    min-width: 682px;
     height: 682px;
   }
 

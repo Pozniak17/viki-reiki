@@ -1,12 +1,19 @@
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import Container from "../shared/Container/Container";
 import styles from "./Header.module.css";
 import logo from "/public/icons/logo.svg";
 import menu from "/public/icons/burger.svg";
 import language from "/public/icons/language.svg";
-import { useTranslation } from "react-i18next";
-// import { changeLanguage } from "i18next";
+import MobileMenu from "../MobileMenu/MobileMenu";
+// import MobileMenu from "../MobileMenu/MobileMenu";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsOpen(!isOpen);
+  };
   const { t, i18n } = useTranslation();
 
   return (
@@ -19,11 +26,15 @@ export default function Header() {
               <p className={styles.logo_text}>Viki Reiki</p>
             </li>
 
-            <li>
+            <li onClick={handleMenuToggle}>
               <img src={menu} alt="burger menu" className={styles.menu_icon} />
             </li>
           </ul>
 
+          {/* <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} /> */}
+          {/* тут мобільне меню */}
+
+          <MobileMenu isOpen={isOpen} onToggle={handleMenuToggle} />
           <nav>
             <ul className={styles.menu_list}>
               <li>
