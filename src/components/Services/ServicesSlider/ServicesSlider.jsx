@@ -8,18 +8,14 @@ import "swiper/css/scrollbar";
 
 import ServicesCard from "../ServicesCard/ServicesCard";
 import services from "../../utils/json/services.json";
-// import styles from "./SliderCardList.module.css";
 
 export default function ServicesSlider() {
   console.log(services);
   return (
     <div>
       <Swiper
-        // modules={[Navigation, Pagination]}
         modules={[Pagination, Autoplay, Navigation]}
-        // spaceBetween={20}
         centeredSlidesBounds={true}
-        navigation
         spaceBetween={0}
         slidesPerView={1}
         direction="horizontal" // Горизонтальна прокрутка (за замовчуванням)
@@ -28,9 +24,6 @@ export default function ServicesSlider() {
         onSwiper={(swiper) => console.log(swiper)}
         breakpoints={{
           0: {
-            slidesPerView: 1,
-          },
-          360: {
             slidesPerView: 1,
           },
           1440: {

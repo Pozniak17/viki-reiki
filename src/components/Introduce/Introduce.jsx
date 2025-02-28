@@ -18,7 +18,6 @@ export default function Introduce() {
           <source
             srcSet="/images/Introduce/Tablet/Introduce-tablet-1x.jpg 1x, /images/Introduce/Tablet/Introduce-tablet-2x.jpg 2x"
             media="(min-width: 744px)"
-            sizes="100vw"
           />
           {/* Мобільні */}
           <source
