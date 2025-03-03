@@ -24,8 +24,9 @@
   gap: 40px;
 }
 
-.mobile_item {
+.link {
   color: var(--Body-Text, #191919);
+  text-decoration: none;
 
   /* Mobile/Headings/H2 */
   font-family: Lato;
@@ -34,6 +35,17 @@
   font-weight: 700;
   line-height: 48px; /* 133.333% */
   letter-spacing: 0.36px;
+}
+
+.link:hover,
+.link:focus {
+  text-decoration: underline;
+  color: var(--accent-bright-blue, #0663ca);
+}
+
+.link:active {
+  text-decoration: underline;
+  color: var(--accent-dark-blue, #0550a3);
 }
 
 .mobile_navigation_active {
@@ -62,6 +74,7 @@
   display: flex;
   gap: 8px;
   align-items: center;
+  text-decoration: none;
 }
 
 .logo_text {

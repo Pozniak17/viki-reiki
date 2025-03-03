@@ -9,44 +9,74 @@ import youtube from "../../../public/icons/Footer/youtube.svg";
 import logo from "../../../public/icons/Footer/logo.svg";
 import language from "../../../public/icons/Footer/map.svg";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
 
 export default function Footer() {
   const { t } = useTranslation();
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="footer">
       <Section>
         <div className={styles.wrapper}>
           <ul className={styles.title_list}>
             <li className={styles.item}>
-              <h3 className={styles.title}>{t("footer.contacts.address1")}</h3>
+              <a
+                href="https://maps.app.goo.gl/XvdQypwiYPRXMRyC9"
+                target="_blank"
+                rel="noreferrer noopener"
+                className={styles.link}
+              >
+                {t("footer.contacts.address1")}
+              </a>
             </li>
             <li className={styles.item}>
-              <h3 className={styles.title}>{t("footer.contacts.number1")}</h3>
+              <a href="tel:+35851166326" className={styles.link}>
+                {t("footer.contacts.number1")}
+              </a>
             </li>
             <li className={styles.item}>
-              <h3 className={styles.title}>{t("footer.contacts.address2")}</h3>
+              <a
+                href="https://maps.app.goo.gl/3p7s4XJ5FgDHpJeZA"
+                target="_blank"
+                rel="noreferrer noopener"
+                className={styles.link}
+              >
+                {t("footer.contacts.address2")}
+              </a>
             </li>
+
             <li className={styles.item}>
-              <h3 className={styles.title}>{t("footer.contacts.number2")}</h3>
+              <a href="tel:+380973007841" className={styles.link}>
+                {t("footer.contacts.number2")}
+              </a>
             </li>
           </ul>
 
           <div className={styles.rigth_wrapper}>
             <ul className={styles.footer_menu}>
               <li>
-                <p className={styles.menu_text}>{t("header.nav1")}</p>
+                <NavLink to="/story" className={styles.menu_link}>
+                  {t("header.nav1")}
+                </NavLink>
               </li>
               <li>
-                <p className={styles.menu_text}>{t("header.nav2")}</p>
+                <NavLink to="/sessions" className={styles.menu_link}>
+                  {t("header.nav2")}
+                </NavLink>
               </li>
               <li>
-                <p className={styles.menu_text}>{t("header.nav3")}</p>
+                <NavLink className={styles.menu_link}>
+                  {t("header.nav3")}
+                </NavLink>
               </li>
               <li>
-                <p className={styles.menu_text}>{t("header.nav4")}</p>
+                <a href="#FAQs" className={styles.menu_link}>
+                  {t("header.nav4")}
+                </a>
               </li>
               <li>
-                <p className={styles.menu_text}>{t("header.nav5")}</p>
+                <a href="#footer" className={styles.menu_link}>
+                  {t("header.nav5")}
+                </a>
               </li>
               <li>
                 <img src={language} alt="language icon" />
@@ -56,7 +86,9 @@ export default function Footer() {
             <div className={styles.third_wrapper}>
               <ul className={styles.icon_list}>
                 <li>
-                  <img src={gmail} alt="gmail icon" />
+                  <a href="mailto:example@mail.ua">
+                    <img src={gmail} alt="gmail icon" />
+                  </a>
                 </li>
                 <li>
                   <img src={telegram} alt="telegram icon" />

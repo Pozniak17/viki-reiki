@@ -12,7 +12,6 @@ export default function Registation() {
       <Title>{t("registration.title")}</Title>
       <div className={styles.wrapper}>
         <div>
-          {/* <img src={image} alt="Viktoria" className={styles.image} /> */}
           <picture>
             <source
               srcSet="/images/Registation/Desktop/Registration-desktop-1x.jpg 1x, /images/Registation/Desktop/Registration-desktop-2x.jpg 2x"

@@ -1,31 +1,23 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Certification from "./components/Certification/Certification/Certification";
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-import Introduce from "./components/Introduce/Introduce";
-import Services from "./components/Services/Services/Services";
-import Video from "./components/Video/Video";
-import Steps from "./components/Steps/Steps";
-import FAQs from "./components/FAQs/FAQs/FAQs";
-import Footer from "./components/Footer/Footer";
-import Benefits from "./components/Benefits/Benefits";
-import Registation from "./components/Registation/Registration/Registation";
+import Home from "./pages/Home/Home";
+import MyStory from "./pages/MyStory/MyStory";
+import NotFound from "./pages/NotFound/NotFound";
+import ReikiSessions from "./pages/ReikiSessions/ReikiSessions";
+import SharedLayout from "./components/SharedLayout/SharedLayout";
+import Calendar from "./pages/Calendar/Calendar";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Hero />
-      <Introduce />
-      <Services />
-      <Benefits />
-      <Certification />
-      <Video />
-      <Steps />
-      <FAQs />
-      <Registation />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<SharedLayout />}>
+        <Route index element={<Home />} />
+        <Route path="story" element={<MyStory />} />
+        <Route path="sessions" element={<ReikiSessions />} />
+        <Route path="calendar" element={<Calendar />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
   );
 }
 

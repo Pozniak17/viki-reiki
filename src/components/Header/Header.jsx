@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
 import Container from "../shared/Container/Container";
 import styles from "./Header.module.css";
-import logo from "/public/icons/logo.svg";
-import menu from "/public/icons/burger.svg";
-import language from "/public/icons/language.svg";
+import logo from "/icons/logo.svg";
+import menu from "/icons/burger.svg";
+import language from "/icons/language.svg";
 import MobileMenu from "../MobileMenu/MobileMenu";
-// import MobileMenu from "../MobileMenu/MobileMenu";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,9 +21,11 @@ export default function Header() {
       <Container>
         <div className={styles.header_container}>
           <ul className={styles.header_list}>
-            <li className={styles.header_wrapper}>
-              <img src={logo} alt="logo" className={styles.logo} />
-              <p className={styles.logo_text}>Viki Reiki</p>
+            <li>
+              <NavLink to="/" className={styles.header_logo}>
+                <img src={logo} alt="logo" className={styles.logo} />
+                <p className={styles.logo_text}>Viki Reiki</p>
+              </NavLink>
             </li>
 
             <li onClick={handleMenuToggle}>
@@ -31,26 +33,33 @@ export default function Header() {
             </li>
           </ul>
 
-          {/* <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} /> */}
-          {/* тут мобільне меню */}
-
           <MobileMenu isOpen={isOpen} onToggle={handleMenuToggle} />
           <nav>
             <ul className={styles.menu_list}>
               <li>
-                <p className={styles.menu_text}>{t("header.nav1")}</p>
+                <NavLink to="/story" className={styles.menu_link}>
+                  {t("header.nav1")}
+                </NavLink>
               </li>
               <li>
-                <p className={styles.menu_text}>{t("header.nav2")}</p>
+                <NavLink to="/sessions" className={styles.menu_link}>
+                  {t("header.nav2")}
+                </NavLink>
               </li>
               <li>
-                <p className={styles.menu_text}>{t("header.nav3")}</p>
+                <NavLink to="/calendar" className={styles.menu_link}>
+                  {t("header.nav3")}
+                </NavLink>
               </li>
               <li>
-                <p className={styles.menu_text}>{t("header.nav4")}</p>
+                <a href="#FAQs" className={styles.menu_link}>
+                  {t("header.nav4")}
+                </a>
               </li>
               <li>
-                <p className={styles.menu_text}>{t("header.nav5")}</p>
+                <a href="#footer" className={styles.menu_link}>
+                  {t("header.nav5")}
+                </a>
               </li>
 
               <li className={styles.language_switcher}>

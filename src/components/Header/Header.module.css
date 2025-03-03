@@ -1,7 +1,6 @@
 .header {
   padding-top: 12px;
   padding-bottom: 12px;
-  /* position: relative; */
 }
 
 .header_list {
@@ -21,9 +20,10 @@
   letter-spacing: 0.5px;
 }
 
-.header_wrapper {
+.header_logo {
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 
 .menu_list {
@@ -32,14 +32,25 @@
   align-items: center;
 }
 
-.menu_text {
+.menu_link {
   color: var(--Body-Text, #2c2727);
-  /* font-family: Lato; */
+  text-decoration: none;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0.5px;
+}
+
+.menu_link:hover,
+.menu_link:focus {
+  color: var(--accent-bright-blue, #0663ca);
+  text-decoration: underline;
+}
+
+.menu_link:active {
+  color: var(--accent-dark-blue, #0550a3);
+  text-decoration: underline;
 }
 
 /* зміна мов */
