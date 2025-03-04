@@ -27,7 +27,8 @@
 }
 
 .title_list {
-  list-style-type: none;
+  list-style: none;
+  text-align: center;
 }
 
 .icon_list {
@@ -78,6 +79,10 @@
     font-size: 22px;
     line-height: 28px;
     letter-spacing: 0.22px;
+  }
+
+  .title_list {
+    text-align: start;
   }
 
   .icon_list {

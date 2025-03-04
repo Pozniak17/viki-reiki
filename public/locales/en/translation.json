@@ -136,5 +136,37 @@
       "number2": "+38 (097) 300-78-41"
     },
     "copyright": "Created by CodeStudioUA@2025"
+  },
+
+  "story": {
+    "title": "My Story",
+    "secondTitle": "Finding My Purpose Through Reiki",
+    "text": "My journey into the world of Reiki took on a new meaning in 2019 when the world faced the COVID-19 pandemic. During this challenging time, many people sought support and healing, and I felt an even stronger calling to help others cope with stress and uncertainty. I began to study and practice Reiki intensively, deepening my understanding of how this ancient Japanese method could benefit people in the modern world. Due to quarantine restrictions, I started offering online sessions, which allowed me to support clients far beyond my city. Working with those who experienced loss and hardship, I realized the true power of emotional support and energy healing. Each session proved to me that Reiki is a powerful tool for restoring inner balance and harmony."
+  },
+  "mission": {
+    "title": "My Mission",
+    "secondTitle": "Healing, Teaching, and Inspiring",
+    "text": "Today, looking back, I see how this experience changed not only the world but also my own practice. I have become not only a more skilled Reiki master but also a more compassionate and understanding person. I don’t just help people find peace and harmony — I teach them how to achieve it themselves. That’s why I became a Reiki teacher, offering seminars and courses to help beginners master this art."
+  },
+  "missionList": {
+    "item1": "Creating a safe, compassionate space for healing",
+    "item2": "Helping people find balance and harmony in their lives",
+    "item3": "Teaching Reiki to those seeking personal growth"
+  },
+  "choose": {
+    "title": "Why Choose Me?",
+    "text": "My students say that my energy and wisdom shine like a beacon in the darkness, helping them find their path to harmony and transformation. And I have no plans to stop."
+  },
+  "chooseList": {
+    "item1": "Experience & Knowledge – Years of practice and hundreds of satisfied clients and students.",
+    "item2": "Personalized Approach – Every individual is unique, so I tailor my methods to meet your needs.",
+    "item3": "Deep Dedication – I live and breathe Reiki, and I am passionate about sharing its light with others."
+  },
+
+  "joinMe": {
+    "title": "Join Me on This Journey!",
+    "text": "Are you ready to experience Reiki or learn this art yourself? I would love to help you find balance, peace, and inner strength.",
+    "secondText": "Get in touch, and let’s begin this journey together!",
+    "button": "Schedule Now"
   }
 }

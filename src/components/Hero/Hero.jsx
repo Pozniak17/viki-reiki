@@ -57,7 +57,7 @@ export default function Hero() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95, originX: 0.5, originY: 0.5 }}
         >
-          <span>{t("hero.heroButton")}</span>
+          {t("hero.heroButton")}
         </motion.button>
 
         <picture>
@@ -87,11 +87,7 @@ export default function Hero() {
         </picture>
       </div>
 
-      <CustomModal isOpen={modalIsOpen} onClose={() => setModalIsOpen(false)}>
-        <h2>Welcome!</h2>
-        <p>Start your journey here</p>
-        <button>Start Your Journey</button>
-      </CustomModal>
+      <CustomModal isOpen={modalIsOpen} onClose={() => setModalIsOpen(false)} />
     </section>
   );
 }
