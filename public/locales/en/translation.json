@@ -140,33 +140,33 @@
 
   "story": {
     "title": "My Story",
-    "secondTitle": "Finding My Purpose Through Reiki",
-    "text": "My journey into the world of Reiki took on a new meaning in 2019 when the world faced the COVID-19 pandemic. During this challenging time, many people sought support and healing, and I felt an even stronger calling to help others cope with stress and uncertainty. I began to study and practice Reiki intensively, deepening my understanding of how this ancient Japanese method could benefit people in the modern world. Due to quarantine restrictions, I started offering online sessions, which allowed me to support clients far beyond my city. Working with those who experienced loss and hardship, I realized the true power of emotional support and energy healing. Each session proved to me that Reiki is a powerful tool for restoring inner balance and harmony."
+    "secondTitle": "How I Found My Calling Through Reiki",
+    "text": "My journey into the world of Reiki began as a search for a deeper meaning in life. I always felt that my purpose was to help people, but it was only when I discovered this ancient Japanese practice that everything fell into place. Reiki became more than just a practice for me — it became a path to healing, harmony, and inner awakening. I immersed myself in studying this art, delving deep into its wisdom, and soon realized that this was what I wanted to share with the world. Every session I conducted felt like a new story — a story of transformation, renewal, and inspiration. People came to me in search of peace, balance, and strength, and I witnessed how their eyes filled with light after our sessions. It was truly magical."
   },
   "mission": {
     "title": "My Mission",
-    "secondTitle": "Healing, Teaching, and Inspiring",
-    "text": "Today, looking back, I see how this experience changed not only the world but also my own practice. I have become not only a more skilled Reiki master but also a more compassionate and understanding person. I don’t just help people find peace and harmony — I teach them how to achieve it themselves. That’s why I became a Reiki teacher, offering seminars and courses to help beginners master this art."
+    "secondTitle": "Heal. Teach. Inspire.",
+    "text": "Today, I am not just a Reiki Master — I am a guide to harmony and inner balance. My goal is to help you find your own path to peace and strength while teaching you how to use this knowledge in your life. I create a space where you can feel safe, where every emotion is accepted, and every need is heard. My sessions are more than just energy work — they are a journey to your true self."
   },
   "missionList": {
-    "item1": "Creating a safe, compassionate space for healing",
-    "item2": "Helping people find balance and harmony in their lives",
-    "item3": "Teaching Reiki to those seeking personal growth"
+    "item1": "Creating a safe, compassionate space for healing.",
+    "item2": "Helping people find balance and harmony in their lives.",
+    "item3": "Teaching Reiki to those who seek personal growth."
   },
   "choose": {
     "title": "Why Choose Me?",
-    "text": "My students say that my energy and wisdom shine like a beacon in the darkness, helping them find their path to harmony and transformation. And I have no plans to stop."
+    "text": "My clients say that after working with me, they feel renewed, filled with energy, and ready for new achievements. My students call me a \"light guide\" who has helped them find their inner strength and confidence."
   },
   "chooseList": {
-    "item1": "Experience & Knowledge – Years of practice and hundreds of satisfied clients and students.",
-    "item2": "Personalized Approach – Every individual is unique, so I tailor my methods to meet your needs.",
-    "item3": "Deep Dedication – I live and breathe Reiki, and I am passionate about sharing its light with others."
+    "item1": "Experience and Results – Over the years, I have helped hundreds of people find harmony and healing.",
+    "item2": "Personalized Approach – Every person is unique, and I tailor my methods to your specific needs.",
+    "item3": "Deep Commitment – Reiki is not just my profession; it is my life. I live by this energy and happily share it with you."
   },
 
   "joinMe": {
-    "title": "Join Me on This Journey!",
-    "text": "Are you ready to experience Reiki or learn this art yourself? I would love to help you find balance, peace, and inner strength.",
-    "secondText": "Get in touch, and let’s begin this journey together!",
-    "button": "Schedule Now"
+    "title": "Join Me!",
+    "text": "Are you ready to change your life? To feel harmony? To learn how to manage your energy? I invite you to a Reiki session or to learn this beautiful art! Together, we will open a new world of possibilities for your body, mind, and soul.",
+    "secondText": "Get in touch, and let’s begin your journey to harmony and inner strength!",
+    "button": "Book Session"
   }
 }

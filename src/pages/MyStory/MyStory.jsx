@@ -26,50 +26,51 @@ export default function MyStory() {
 
       <ul className={styles.list}>
         <li className={styles.list_item}>
-          <span>
-            <img src="/icons/MyStory/house.svg" alt="house icon" />
-          </span>
+          <img src="/icons/MyStory/house.svg" alt="house icon" />
+
           <p className={styles.list_text}>{t("missionList.item1")}</p>
         </li>
 
         <li className={styles.list_item}>
-          <span>
-            <img src="/icons/MyStory/yin-yang.svg" alt="yin-yang icon" />
-          </span>
+          <img src="/icons/MyStory/yin-yang.svg" alt="yin-yang icon" />
+
           <p className={styles.list_text}>{t("missionList.item2")}</p>
         </li>
 
         <li className={styles.list_item}>
-          <span>
-            <img src="/icons/MyStory/book.svg" alt="book icon" />
-          </span>
+          <img src="/icons/MyStory/book.svg" alt="book icon" />
+
           <p className={styles.list_text}>{t("missionList.item3")}</p>
         </li>
       </ul>
 
       <h2 className={styles.title}>{t("choose.title")}</h2>
-      <ul style={{ listStyle: "none" }}>
-        <li>
-          <span>✔️</span>
-          <p>{t("chooseList.item1")}</p>
+      <ul className={styles.list}>
+        <li className={styles.list_item}>
+          <img src="/icons/MyStory/diamond.svg" alt="list mark icon" />
+
+          <p className={styles.list_text}>{t("chooseList.item1")}</p>
         </li>
 
-        <li>
-          <span>✔️</span>
-          <p>{t("chooseList.item2")}</p>
+        <li className={styles.list_item}>
+          <img src="/icons/MyStory/diamond.svg" alt="list mark icon" />
+
+          <p className={styles.list_text}>{t("chooseList.item2")}</p>
         </li>
 
-        <li>
-          <span>✔️</span>
-          <p>{t("chooseList.item3")}</p>
+        <li className={styles.list_item}>
+          <img src="/icons/MyStory/diamond.svg" alt="list mark icon" />
+
+          <p className={styles.list_text}>{t("chooseList.item3")}</p>
         </li>
       </ul>
-      <p>{t("choose.text")}</p>
+      <p className={styles.text_choose}>{t("choose.text")}</p>
 
       <h2 className={styles.title}>{t("joinMe.title")}</h2>
-      <p>{t("joinMe.text")}</p>
-      <p>
-        <span>📃</span>
+      <p className={styles.text}>{t("joinMe.text")}</p>
+
+      <p className={styles.join}>
+        <img src="/icons/MyStory/mail.svg" alt="mail icon" />
         {t("joinMe.secondText")}
       </p>
 

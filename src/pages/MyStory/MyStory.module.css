@@ -6,7 +6,7 @@
 }
 .title {
   margin-top: 32px;
-  margin-bottom: 24px;
+
   color: #00758f;
   text-align: center;
   font-size: 36px;
@@ -15,20 +15,28 @@
   letter-spacing: 0.36px;
 }
 .second_title {
-  margin-bottom: 24px;
+  margin-top: 16px;
   color: #000;
   text-align: center;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 28px; /* 140% */
   letter-spacing: 0.2px;
 }
 .text {
+  margin-top: 16px;
   color: #000;
   font-size: 18px;
   line-height: 28px;
 }
+.mission_text {
+  color: #000;
+  font-size: 18px;
+  line-height: 28px;
+}
+
 .list {
-  margin-top: 24px;
+  margin-top: 16px;
   list-style: none;
 }
 .list_text {
@@ -45,6 +53,19 @@
 .list_item:last-child {
   margin-bottom: 0;
 }
+
+.text_choose {
+  margin-top: 16px;
+}
+
+.join {
+  margin-top: 16px;
+  display: flex;
+  gap: 16px;
+  color: #000;
+  font-size: 18px;
+  line-height: 28px;
+}
 .button {
   margin-top: 32px;
   margin-bottom: 32px;
@@ -59,7 +80,7 @@
   align-items: center;
 
   color: var(--Body-Soft-White, #f9fafa);
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 32px;
   letter-spacing: 0.5px;
@@ -79,25 +100,64 @@
 
 @media (min-width: 744px) {
   .title {
-    margin-bottom: 32px;
+    margin-top: 40px;
     font-size: 40px;
     letter-spacing: 0.4px;
   }
   .second_title {
-    margin-bottom: 32px;
+    margin-top: 24px;
     font-size: 22px;
     letter-spacing: 0.22px;
   }
   .text {
+    margin-top: 24px;
     font-size: 20px;
     line-height: 32px;
   }
   .list {
-    margin-top: 32px;
+    margin-top: 24px;
   }
+
   .list_text {
     font-size: 20px;
     line-height: 32px;
+  }
+
+  .list_item {
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  .text_choose {
+    margin-top: 24px;
+    color: #000;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .join {
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+    color: #000;
+    font-size: 20px;
+    line-height: 32px;
+
+    color: #000;
+  }
+
+  .button {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    font-size: 22px;
+
+    font-weight: 700;
+    line-height: 28px; /* 127.273% */
+    letter-spacing: 0.22px;
+
+    padding: 18px 48px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -113,6 +173,7 @@
     letter-spacing: 0.5px;
   }
   .text {
+    margin-bottom: 48px;
     font-size: 24px;
     line-height: 32px;
   }
@@ -122,5 +183,11 @@
   .list_text {
     font-size: 24px;
     line-height: 32px;
+  }
+
+  .button {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
   }
 }
