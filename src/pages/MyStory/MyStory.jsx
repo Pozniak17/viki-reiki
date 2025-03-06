@@ -9,12 +9,26 @@ export default function MyStory() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   return (
     <Section>
-      <img
-        srcSet="/images/MyStory/MyStory-1x.jpg 1x, /images/MyStory/MyStory-2x.jpg 2x"
-        src="/images/MyStory/MyStory-1x.jpg 1x"
-        className={styles.image}
-        alt="Meditation"
-      />
+      <div className={styles.wrapper}>
+        <img
+          srcSet="/images/MyStory/circle-left-1x.jpg 1x, /images/MyStory/circle-left-2x.jpg 2x"
+          src="/images/MyStory/circle-left-1x.jpg 1x"
+          className={styles.image_desktop}
+          alt="circle"
+        />
+        <img
+          srcSet="/images/MyStory/MyStory-1x.jpg 1x, /images/MyStory/MyStory-2x.jpg 2x"
+          src="/images/MyStory/MyStory-1x.jpg 1x"
+          className={styles.image}
+          alt="Meditation"
+        />
+        <img
+          srcSet="/images/MyStory/circle-right-1x.jpg 1x, /images/MyStory/circle-right-2x.jpg 2x"
+          src="/images/MyStory/circle-right-1x.jpg 1x"
+          className={styles.image_desktop}
+          alt="circle"
+        />
+      </div>
 
       <h2 className={styles.title}>{t("story.title")}</h2>
       <h3 className={styles.second_title}>{t("story.secondTitle")}</h3>
