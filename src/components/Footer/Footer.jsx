@@ -1,13 +1,13 @@
 import styles from "./Footer.module.css";
 import Section from "../shared/Section/Section";
 
-import gmail from "../../../public/icons/Footer/gmail.svg";
-import telegram from "../../../public/icons/Footer/telegram.svg";
-import instagram from "../../../public/icons/Footer/instagram.svg";
-import facebook from "../../../public/icons/Footer/facebook.svg";
-import youtube from "../../../public/icons/Footer/youtube.svg";
-import logo from "../../../public/icons/Footer/logo.svg";
-import language from "../../../public/icons/Footer/map.svg";
+import gmail from "/icons/Footer/gmail.svg";
+import telegram from "/icons/Footer/telegram.svg";
+import instagram from "/icons/Footer/instagram.svg";
+import facebook from "/icons/Footer/facebook.svg";
+import youtube from "/icons/Footer/youtube.svg";
+import logo from "/icons/Footer/logo.svg";
+import language from "/icons/Footer/map.svg";
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 
