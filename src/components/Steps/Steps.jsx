@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import Section from "../shared/Section/Section";
 import Title from "../shared/Title/Title";
 import styles from "./Steps.module.css";
-import meditate from "../../../public/images/Steps/meditate.jpg";
+import meditate from "/images/Steps/meditate.jpg";
 
 export default function Steps() {
   const { t } = useTranslation();
