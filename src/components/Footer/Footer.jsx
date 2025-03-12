@@ -1,17 +1,17 @@
 import styles from "./Footer.module.css";
 import Section from "../shared/Section/Section";
+import Instagram from "../../../public/icons/instagram.svg";
+import InstagramWhite from "../../../public/icons/instagramWhite.svg";
 
-import gmail from "/icons/Footer/gmail.svg";
-import telegram from "/icons/Footer/telegram.svg";
-import instagram from "/icons/Footer/instagram.svg";
-import facebook from "/icons/Footer/facebook.svg";
-import youtube from "/icons/Footer/youtube.svg";
 import logo from "/icons/Footer/logo.svg";
 import language from "/icons/Footer/map.svg";
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
+import Icon from "../shared/Icon/Icon";
+import { useState } from "react";
 
 export default function Footer() {
+  const [isHovered, setIsHovered] = useState(false);
   const { t } = useTranslation();
   return (
     <footer className={styles.footer} id="footer">
@@ -85,22 +85,62 @@ export default function Footer() {
 
             <div className={styles.third_wrapper}>
               <ul className={styles.icon_list}>
-                <li>
-                  <a href="mailto:example@mail.ua">
-                    <img src={gmail} alt="gmail icon" />
+                <li className={styles.icon_item}>
+                  <a
+                    href="mailto:contactreikivitality@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Icon id={"icon-gmail"} className={styles.icon_gmail} />
                   </a>
                 </li>
-                <li>
-                  <img src={telegram} alt="telegram icon" />
+                <li className={styles.icon_item}>
+                  <a href="">
+                    <Icon
+                      id={"icon-telegram"}
+                      className={styles.icon_telegram}
+                    />
+                  </a>
                 </li>
-                <li>
-                  <img src={facebook} alt=" facebook icon" />
+                <li className={styles.icon_item}>
+                  <a
+                    href="https://www.facebook.com/groups/923533436324403/?ref=share"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Icon
+                      id={"icon-facebook"}
+                      className={styles.icon_facebook}
+                    />
+                  </a>
                 </li>
-                <li>
-                  <img src={instagram} alt="instagram icon" />
+                <li
+                  className={styles.icon_item}
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                >
+                  <a
+                    href="https://www.instagram.com/viki_reiki?utm_source=qr&igsh=MTMxMWk2cjVkdmcweQ=="
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={isHovered ? Instagram : InstagramWhite}
+                      alt="Instagram Icon"
+                      className={styles.icon_instagram}
+                    />
+                  </a>
                 </li>
-                <li>
-                  <img src={youtube} alt="youtube icon" />
+
+                <li className={styles.icon_item}>
+                  <a
+                    href="https://www.youtube.com/@victoriiadrachuk4508"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.youtube_link}
+                  >
+                    <Icon id={"icon-youtube"} className={styles.icon_youtube} />
+                  </a>
                 </li>
               </ul>
 

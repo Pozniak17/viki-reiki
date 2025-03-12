@@ -42,7 +42,7 @@ export default function Calendar() {
         </button>
         <iframe
           src={`https://calendar.google.com/calendar/embed?height=${calendarHeight}&wkst=1&ctz=Europe%2FDublin&showPrint=0&src=Y29udGFjdHJlaWtpdml0YWxpdHlAZ21haWwuY29t&color=%23039BE5`}
-          width="100%"
+          width={"100%"}
           height={calendarHeight}
         ></iframe>
 

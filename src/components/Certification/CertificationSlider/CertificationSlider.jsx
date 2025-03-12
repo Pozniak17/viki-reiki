@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -13,11 +13,8 @@ import certificates from "../../utils/json/certificates.json";
 export default function CertificationSlider() {
   return (
     <Swiper
-      // modules={[Navigation, Pagination]}
-      modules={[Pagination, Autoplay, Navigation]}
-      // spaceBetween={20}
+      modules={[Pagination, Autoplay]}
       centeredSlidesBounds={true}
-      navigation
       spaceBetween={0}
       slidesPerView={1}
       direction="horizontal" // Горизонтальна прокрутка (за замовчуванням)

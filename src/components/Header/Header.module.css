@@ -3,6 +3,14 @@
   padding-bottom: 12px;
 }
 
+.logo {
+  width: 57px;
+  height: 58px;
+  border-radius: 50px;
+  fill: var(--accent-blue, #6091d4);
+  border: 0.5px solid var(--accent-blue, #6091d4);
+}
+
 .header_list {
   list-style: none;
   display: flex;
@@ -18,6 +26,25 @@
   font-weight: 700;
   line-height: 32px;
   letter-spacing: 0.5px;
+}
+
+/* стани */
+.logo_item:hover .logo {
+  fill: var(--accent-logo-header-hover, rgba(6, 99, 202, 0.8));
+  border: 0.5px solid var(--accent-logo-header-hover, rgba(6, 99, 202, 0.8));
+}
+
+.logo_item:hover .logo_text {
+  color: var(--accent-logo-header-hover, rgba(6, 99, 202, 0.8));
+}
+
+.logo_item:active .logo {
+  fill: var(--accent-logo-header-pressed, rgba(5, 80, 163, 0.9));
+  border: 0.5px solid var(--accent-logo-header-pressed, rgba(5, 80, 163, 0.9));
+}
+
+.logo_item:active .logo_text {
+  color: var(--accent-logo-header-pressed, rgba(5, 80, 163, 0.9));
 }
 
 .header_logo {

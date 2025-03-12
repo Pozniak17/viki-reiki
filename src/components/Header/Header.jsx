@@ -3,10 +3,11 @@ import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 import Container from "../shared/Container/Container";
 import styles from "./Header.module.css";
-import logo from "/icons/logo.svg";
+// import logo from "/icons/logo.svg";
 import menu from "/icons/burger.svg";
 import language from "/icons/language.svg";
 import MobileMenu from "../MobileMenu/MobileMenu";
+import Icon from "../shared/Icon/Icon";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,9 +22,10 @@ export default function Header() {
       <Container>
         <div className={styles.header_container}>
           <ul className={styles.header_list}>
-            <li>
+            <li className={styles.logo_item}>
               <NavLink to="/" className={styles.header_logo}>
-                <img src={logo} alt="logo" className={styles.logo} />
+                {/* <img src={logo} alt="logo" className={styles.logo} /> */}
+                <Icon id="logo-header" className={styles.logo} />
                 <p className={styles.logo_text}>Viki Reiki</p>
               </NavLink>
             </li>

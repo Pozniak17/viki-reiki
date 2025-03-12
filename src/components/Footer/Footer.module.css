@@ -40,6 +40,60 @@
   margin-bottom: 40px;
 }
 
+.icon_item {
+  display: flex;
+  align-items: center;
+}
+/* іконки */
+.icon_gmail {
+  width: 25px;
+  height: 25px;
+}
+.icon_gmail:hover {
+  --color8: #f4f2ed;
+  --color9: #4285f4;
+  --color10: #34a853;
+  --color11: #fbbc04;
+  --color12: #ea4335;
+  --color13: #c5221f;
+}
+
+.icon_telegram {
+  width: 32px;
+  height: 32px;
+}
+.icon_telegram:hover {
+  --color14: #2aabee;
+}
+
+.icon_facebook {
+  width: 32px;
+  height: 32px;
+}
+.icon_facebook:hover {
+  --color15: #3d5a98;
+}
+
+.icon_instagram {
+  width: 32px;
+  height: 32px;
+}
+
+.icon_youtube {
+  width: 32px;
+  height: 32px;
+}
+
+.icon_youtube:hover {
+  --color16: #ff0000;
+  --color6: #ffffff;
+}
+
+.youtube_link {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   margin-left: auto;
   margin-right: auto;
