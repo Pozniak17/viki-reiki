@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 import Section from "../../components/shared/Section/Section";
 import CustomModal from "../../components/CustomModal/CustomModal";
 import styles from "./MyStory.module.css";
@@ -10,23 +11,34 @@ export default function MyStory() {
   return (
     <Section>
       <div className={styles.wrapper}>
-        <img
+        <motion.img
           srcSet="/images/MyStory/circle-left-1x.jpg 1x, /images/MyStory/circle-left-2x.jpg 2x"
           src="/images/MyStory/circle-left-1x.jpg 1x"
           className={styles.image_desktop}
           alt="circle"
+          initial={{ opacity: 0, scale: 0.8, x: -50 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
         />
-        <img
+
+        <motion.img
           srcSet="/images/MyStory/MyStory-1x.jpg 1x, /images/MyStory/MyStory-2x.jpg 2x"
           src="/images/MyStory/MyStory-1x.jpg 1x"
           className={styles.image}
           alt="Meditation"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
         />
-        <img
+
+        <motion.img
           srcSet="/images/MyStory/circle-right-1x.jpg 1x, /images/MyStory/circle-right-2x.jpg 2x"
           src="/images/MyStory/circle-right-1x.jpg 1x"
           className={styles.image_desktop}
           alt="circle"
+          initial={{ opacity: 0, scale: 0.8, x: 50 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
         />
       </div>
 

@@ -1,6 +1,4 @@
 .images {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .title {
@@ -101,6 +99,17 @@
   width: 150px;
 }
 
+.image_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 32px;
+}
+
+.image_desktop {
+  display: none;
+}
+
 @media (min-width: 744px) {
   .title {
     font-size: 40px;
@@ -182,5 +191,11 @@
     width: 330px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .image_desktop {
+    display: block;
+    width: 248px;
+    height: 248px;
   }
 }

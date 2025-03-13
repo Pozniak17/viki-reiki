@@ -1,14 +1,12 @@
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import styles from "./Footer.module.css";
 import Section from "../shared/Section/Section";
-import Instagram from "../../../public/icons/instagram.svg";
-import InstagramWhite from "../../../public/icons/instagramWhite.svg";
-
-import logo from "/icons/Footer/logo.svg";
+import Instagram from "/icons/instagram.svg";
+import InstagramWhite from "/icons/instagramWhite.svg";
 import language from "/icons/Footer/map.svg";
-import { useTranslation } from "react-i18next";
-import { NavLink } from "react-router-dom";
 import Icon from "../shared/Icon/Icon";
-import { useState } from "react";
 
 export default function Footer() {
   const [isHovered, setIsHovered] = useState(false);
@@ -54,17 +52,34 @@ export default function Footer() {
           <div className={styles.rigth_wrapper}>
             <ul className={styles.footer_menu}>
               <li>
-                <NavLink to="/story" className={styles.menu_link}>
+                <NavLink
+                  to="/story"
+                  className={styles.menu_link}
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                >
                   {t("header.nav1")}
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/sessions" className={styles.menu_link}>
+                <NavLink
+                  to="/sessions"
+                  className={styles.menu_link}
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                >
                   {t("header.nav2")}
                 </NavLink>
               </li>
               <li>
-                <NavLink className={styles.menu_link}>
+                <NavLink
+                  className={styles.menu_link}
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                >
                   {t("header.nav3")}
                 </NavLink>
               </li>
@@ -94,6 +109,7 @@ export default function Footer() {
                     <Icon id={"icon-gmail"} className={styles.icon_gmail} />
                   </a>
                 </li>
+
                 <li className={styles.icon_item}>
                   <a href="">
                     <Icon
@@ -144,9 +160,17 @@ export default function Footer() {
                 </li>
               </ul>
 
-              <div className={styles.logo_wrapper}>
-                <img src={logo} alt="footer logo" className={styles.logo} />
-                <h2 className={styles.logo_title}>Viki Reiki</h2>
+              <div>
+                <Link
+                  to="/"
+                  className={styles.logo_wrapper}
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                >
+                  <Icon id={"logo-footer"} className={styles.logo} />
+                  <h2 className={styles.logo_title}>Viki Reiki</h2>
+                </Link>
               </div>
             </div>
             <p className={styles.copyright}>{t("footer.copyright")}</p>

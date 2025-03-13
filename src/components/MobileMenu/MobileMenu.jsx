@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import styles from "./MobileMenu.module.css";
 import { NavLink } from "react-router-dom";
+import Icon from "../shared/Icon/Icon";
 
 export default function MobileMenu({ isOpen, onToggle }) {
   //  мочим скрооол)
@@ -55,10 +56,9 @@ export default function MobileMenu({ isOpen, onToggle }) {
         </NavLink>
 
         <button className={styles.close_button} onClick={onToggle}>
-          <img
+          <Icon
             onClick={onToggle}
-            src="/icons/Modal/cross.svg"
-            alt="close"
+            id={"icon-cross"}
             className={styles.icon_close}
           />
         </button>

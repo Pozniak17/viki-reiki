@@ -95,12 +95,40 @@
 }
 
 .logo {
+  display: block;
+  width: 90px;
+  height: 90px;
   margin-left: auto;
   margin-right: auto;
+  --color1: var(--Body-Soft-White, #f9fafa);
+  cursor: pointer;
+}
+
+.logo_wrapper {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo_wrapper:hover .logo {
+  --color1: var(--accent-blue, #6091d4);
+}
+
+.logo_wrapper:active .logo {
+  --color1: var(--accent-bright-blue, #0663ca);
 }
 
 .logo_title {
   display: none;
+}
+
+.logo_wrapper:hover .logo_title {
+  color: var(--accent-blue, #6091d4);
+}
+
+.logo_wrapper:active .logo_title {
+  color: var(--accent-bright-blue, #0663ca);
 }
 
 .copyright {
@@ -157,12 +185,6 @@
     font-weight: 700;
     line-height: 36px; /* 112.5% */
     letter-spacing: 0.5px;
-  }
-
-  .logo_wrapper {
-    display: flex;
-    align-items: center;
-    gap: 16px;
   }
 
   .copyright {

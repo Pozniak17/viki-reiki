@@ -121,6 +121,16 @@
   cursor: pointer;
 }
 
+.icon_cross {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.icon_cross:hover {
+  color: #4194b7;
+}
+
 @media (min-width: 744px) {
   .modal {
     width: 658px;

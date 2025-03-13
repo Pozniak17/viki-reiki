@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import Section from "../../components/shared/Section/Section";
 import styles from "./ReikiSessions.module.css";
 import CustomModal from "../../components/CustomModal/CustomModal";
@@ -7,12 +8,37 @@ export default function ReikiSessions() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   return (
     <Section>
-      <img
-        className={styles.images}
-        srcSet="/images/ReikiSessions/reiki-sessions-1x.jpg 1x, /images/ReikiSessions/reiki-sessions-2x.jpg 2x"
-        src="/images/ReikiSessions/reiki-sessions-1x.jpg"
-        alt="healing hand"
-      />
+      <div className={styles.image_wrapper}>
+        <motion.img
+          srcSet="/images/MyStory/circle-left-1x.jpg 1x, /images/MyStory/circle-left-2x.jpg 2x"
+          src="/images/MyStory/circle-left-1x.jpg 1x"
+          className={styles.image_desktop}
+          alt="circle"
+          initial={{ opacity: 0, scale: 0.8, x: -50 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        />
+        <motion.img
+          srcSet="/images/ReikiSessions/reiki-sessions-1x.jpg 1x, /images/ReikiSessions/reiki-sessions-2x.jpg 2x"
+          src="/images/ReikiSessions/reiki-sessions-1x.jpg"
+          className={styles.images}
+          alt="healing hand"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+        />
+
+        <motion.img
+          srcSet="/images/MyStory/circle-right-1x.jpg 1x, /images/MyStory/circle-right-2x.jpg 2x"
+          src="/images/MyStory/circle-right-1x.jpg 1x"
+          className={styles.image_desktop}
+          alt="circle"
+          initial={{ opacity: 0, scale: 0.8, x: 50 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+        />
+      </div>
+
       <h2 className={styles.title}>Individual Reiki Sessions</h2>
       <p className={styles.text}>
         Individual Reiki Sessions help deeply relax, restore energetic balance,

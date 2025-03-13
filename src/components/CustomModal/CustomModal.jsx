@@ -1,8 +1,8 @@
+import { useEffect } from "react";
 import { Field, Form, Formik } from "formik";
 import Modal from "react-modal";
 import styles from "./CustomModal.module.css";
-import IconClose from "../../../public/icons/Modal/cross.svg";
-import { useEffect } from "react";
+import Icon from "../shared/Icon/Icon";
 
 Modal.setAppElement("#modal");
 
@@ -35,7 +35,8 @@ export default function CustomModal({ isOpen, onClose }) {
       overlayClassName={styles.overlay} // Додаємо клас для бекдропу
     >
       <button className={styles.close_button} onClick={() => onClose()}>
-        <img src={IconClose} alt="close button" />
+        <Icon id={"icon-cross"} className={styles.icon_cross} />
+        {/* <img src={IconClose} alt="close button" /> */}
       </button>
 
       <div className={styles.wrapper}>

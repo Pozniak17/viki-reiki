@@ -47,6 +47,17 @@
   color: var(--accent-logo-header-pressed, rgba(5, 80, 163, 0.9));
 }
 
+.menu_icon {
+  width: 60px;
+  height: 44px;
+  color: #2c2727;
+  cursor: pointer;
+}
+
+.menu_icon:hover {
+  color: #4194b7;
+}
+
 .header_logo {
   display: flex;
   align-items: center;
