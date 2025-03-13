@@ -1,19 +1,41 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import Container from "../shared/Container/Container";
 import styles from "./Header.module.css";
 import language from "/icons/language.svg";
 import MobileMenu from "../MobileMenu/MobileMenu";
 import Icon from "../shared/Icon/Icon";
+import clsx from "clsx";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (location.pathname === "/" && location.hash === "#FAQs") {
+      const element = document.getElementById("FAQs");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
+  const handleFaqClick = (e) => {
+    e.preventDefault();
+    navigate("/#FAQs");
+  };
 
   const handleMenuToggle = () => {
     setIsOpen(!isOpen);
   };
   const { t, i18n } = useTranslation();
+
+  const buildLinkClass = ({ isActive }) => {
+    return clsx(styles.menu_link, isActive && styles.active_link);
+  };
 
   return (
     <header className={styles.header}>
@@ -36,22 +58,26 @@ export default function Header() {
           <nav>
             <ul className={styles.menu_list}>
               <li>
-                <NavLink to="/story" className={styles.menu_link}>
+                <NavLink to="/story" className={buildLinkClass}>
                   {t("header.nav1")}
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/sessions" className={styles.menu_link}>
+                <NavLink to="/sessions" className={buildLinkClass}>
                   {t("header.nav2")}
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/calendar" className={styles.menu_link}>
+                <NavLink to="/calendar" className={buildLinkClass}>
                   {t("header.nav3")}
                 </NavLink>
               </li>
               <li>
-                <a href="#FAQs" className={styles.menu_link}>
+                <a
+                  href="#FAQs"
+                  onClick={handleFaqClick}
+                  className={styles.menu_link}
+                >
                   {t("header.nav4")}
                 </a>
               </li>

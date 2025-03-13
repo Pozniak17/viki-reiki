@@ -83,7 +83,6 @@
 .menu_link:hover,
 .menu_link:focus {
   color: var(--accent-bright-blue, #0663ca);
-  text-decoration: underline;
 }
 
 .menu_link:active {
@@ -91,15 +90,17 @@
   text-decoration: underline;
 }
 
+.active_link {
+  color: var(--accent-bright-blue, #0663ca);
+  text-decoration: underline;
+}
+
 /* зміна мов */
 .language_wrapper {
   display: none;
   width: 32px;
-  /* position: absolute; */
   top: 19px;
   right: 85px;
-
-  /* outline: 1px solid red; */
 }
 
 .language_list {
