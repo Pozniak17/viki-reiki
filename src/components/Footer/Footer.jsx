@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { motion, AnimatePresence } from "framer-motion";
 import styles from "./Footer.module.css";
 import Section from "../shared/Section/Section";
 import Instagram from "/icons/instagram.svg";
@@ -10,6 +11,27 @@ import Icon from "../shared/Icon/Icon";
 
 export default function Footer() {
   const [isHovered, setIsHovered] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const modalRef = useRef(null); // Посилання на модалку
+
+  // закриваю при кліку поза модалкою
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
+
   const { t } = useTranslation();
   return (
     <footer className={styles.footer} id="footer">
@@ -173,7 +195,86 @@ export default function Footer() {
                 </Link>
               </div>
             </div>
-            <p className={styles.copyright}>{t("footer.copyright")}</p>
+
+            <div>
+              <p
+                className={styles.copyright}
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                {t("footer.copyright")}
+              </p>
+
+              <AnimatePresence>
+                {isOpen && (
+                  <motion.div
+                    className={styles.authors}
+                    ref={modalRef}
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                  >
+                    <ul className={styles.authors_list}>
+                      <li className={styles.author_item}>
+                        <a
+                          href="https://github.com/Pozniak17"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={styles.author_link}
+                        >
+                          <div className={styles.author_wrapper}>
+                            <img
+                              srcSet="/images/Footer/Ye-1x.jpg 1x, /images/Footer/Ye-2x.jpg 2x"
+                              src="/images/Footer/Ye-1x.jpg 1x"
+                              className={styles.author_images}
+                              alt="Pozniak Yevhenii"
+                            />
+                            <div>
+                              <h3 className={styles.author_title}>
+                                Євгеній Позняк
+                              </h3>
+                              <p className={styles.author_text}>Розробник</p>
+                              <p className={styles.author_text}>
+                                Jekamanu@gmail.com
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li className={styles.author_item}>
+                        <a
+                          href="https://github.com/nazinamari"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={styles.author_link}
+                        >
+                          <div className={styles.author_wrapper}>
+                            <img
+                              srcSet="/images/Footer/Ma-1x.jpg 1x, /images/Footer/Ma-2x.jpg 2x"
+                              src="/images/Footer/Ma-1x.jpg 1x"
+                              className={styles.author_images}
+                              alt="Marina Nazina"
+                            />
+                            <div>
+                              <h3 className={styles.author_title}>
+                                Марина Назіна
+                              </h3>
+                              <p className={styles.author_text}>
+                                UI/UX Дизайнер
+                              </p>
+                              <p className={styles.author_text}>
+                                nzyame@gmail.com
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
           </div>
         </div>
       </Section>

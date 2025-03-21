@@ -9,6 +9,7 @@
   border-radius: 50px;
   fill: var(--accent-blue, #6091d4);
   border: 0.5px solid var(--accent-blue, #6091d4);
+  transition: 300ms ease-in-out 150ms;
 }
 
 .header_list {
@@ -54,7 +55,8 @@
   cursor: pointer;
 }
 
-.menu_icon:hover {
+.menu_icon:hover,
+.menu_icon:focus {
   color: #4194b7;
 }
 
@@ -78,6 +80,7 @@
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0.5px;
+  transition: color 150ms ease-in-out 150ms;
 }
 
 .menu_link:hover,

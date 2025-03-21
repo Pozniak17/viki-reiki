@@ -1,7 +1,7 @@
+import { useState } from "react";
 import styles from "./Accordion.module.css";
 import chevronDown from "/icons/FAQs/chevron-down.svg";
 import chevronUp from "/icons/FAQs/chevron-up.svg";
-import { useState } from "react";
 
 export default function Accordion({ faqList }) {
   const [openId, setId] = useState(null);

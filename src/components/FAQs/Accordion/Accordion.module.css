@@ -1,5 +1,5 @@
 .accordion {
-  list-style-type: none;
+  list-style: none;
 }
 
 .accordion_item {
@@ -10,6 +10,7 @@
   border-radius: 8px;
   border: 1px solid var(--shadow-stroke-skroll-stroke, #dfdfdf);
   cursor: pointer;
+  transition: border 150ms ease-in-out 0ms;
 }
 
 .accordion_item:hover,
