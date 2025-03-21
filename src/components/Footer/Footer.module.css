@@ -132,6 +132,7 @@
 }
 
 .copyright {
+  cursor: pointer;
   margin-top: 24px;
   color: #fff;
   text-align: center;
