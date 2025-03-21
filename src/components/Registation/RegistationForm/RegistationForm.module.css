@@ -25,9 +25,7 @@
 
   border-bottom: 1px solid var(--Body-Grey, #414343);
 
-  /* color: rgba(65, 67, 67, 0.5); */
   background: inherit;
-  /* font-family: Lato; */
   font-size: 16px;
   line-height: 24px;
 }
@@ -42,7 +40,6 @@
 
   color: rgba(65, 67, 67, 0.5);
 
-  /* font-family: Lato; */
   font-size: 16px;
 
   line-height: 24px;
@@ -72,14 +69,15 @@
 }
 
 .error {
-  color: green;
+  margin: 0;
+  padding: 0;
+  color: #ff4343;
+  font-family: Lato;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
 }
-
-/* .notification {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
 
 @media (min-width: 744px) {
   .list {

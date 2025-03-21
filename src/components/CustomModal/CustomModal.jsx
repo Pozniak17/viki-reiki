@@ -1,10 +1,29 @@
 import { useEffect } from "react";
 import { Field, Form, Formik } from "formik";
 import Modal from "react-modal";
+import * as Yup from "yup";
+import { ErrorMessage } from "formik";
 import styles from "./CustomModal.module.css";
 import Icon from "../shared/Icon/Icon";
+import { sendMessageToTelegram } from "../utils/fetch/telegramApi";
+import { toast, ToastContainer } from "react-toastify";
 
 Modal.setAppElement("#modal");
+
+const FeedbackSchema = Yup.object().shape({
+  username: Yup.string()
+    .min(2, "Too Short!")
+    .max(50, "Too Long!")
+    .required("Required"),
+  email: Yup.string().email("Must be a valid email!").required("Required"),
+  phone: Yup.string()
+    .matches(/^\+?[1-9]\d{1,14}$/, "Incorrect phone number")
+    .required("Enter a phone number"),
+  message: Yup.string()
+    .min(3, "Too short")
+    .max(256, "Too long")
+    .required("Required"),
+});
 
 const initialValues = {
   username: "",
@@ -22,9 +41,14 @@ export default function CustomModal({ isOpen, onClose }) {
     };
   }, [isOpen]);
 
-  function handleSubmit(values, actions) {
-    console.log(values);
-    actions.resetForm();
+  async function handleSubmit(values, actions) {
+    try {
+      await sendMessageToTelegram(values);
+      toast.success("Successfully sent! 🎉");
+      actions.resetForm();
+    } catch {
+      toast.error("Error while sending! 😢");
+    }
   }
   return (
     <Modal
@@ -32,11 +56,10 @@ export default function CustomModal({ isOpen, onClose }) {
       onRequestClose={onClose}
       contentLabel="Registration Modal"
       className={styles.modal}
-      overlayClassName={styles.overlay} // Додаємо клас для бекдропу
+      overlayClassName={styles.overlay} // клас для бекдропу
     >
       <button className={styles.close_button} onClick={() => onClose()}>
         <Icon id={"icon-cross"} className={styles.icon_cross} />
-        {/* <img src={IconClose} alt="close button" /> */}
       </button>
 
       <div className={styles.wrapper}>
@@ -65,61 +88,81 @@ export default function CustomModal({ isOpen, onClose }) {
         <div>
           <Formik
             initialValues={initialValues}
+            validationSchema={FeedbackSchema}
             onSubmit={handleSubmit}
-            preventScroll
           >
-            {({ handleSubmit }) => (
-              <>
-                <Form className={styles.form}>
-                  <ul className={styles.list}>
-                    <li className={styles.item}>
-                      <Field
-                        type="text"
-                        name="username"
-                        placeholder="Name"
-                        className={styles.field}
-                      />
-                    </li>
+            <Form className={styles.form}>
+              <ul className={styles.list}>
+                <li className={styles.item}>
+                  <Field
+                    type="text"
+                    name="username"
+                    placeholder="Name"
+                    className={styles.field}
+                  />
+                  <ErrorMessage
+                    className={styles.error}
+                    name="username"
+                    component="span"
+                  />
+                </li>
 
-                    <li className={styles.item}>
-                      <Field
-                        type="email"
-                        name="email"
-                        placeholder="Email"
-                        className={styles.field}
-                      />
-                    </li>
+                <li className={styles.item}>
+                  <Field
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    className={styles.field}
+                  />
+                  <ErrorMessage
+                    className={styles.error}
+                    name="email"
+                    component="span"
+                  />
+                </li>
 
-                    <li className={styles.item}>
-                      <Field
-                        type="number"
-                        name="phone"
-                        placeholder="Phone"
-                        className={styles.field}
-                      />
-                    </li>
+                <li className={styles.item}>
+                  <Field
+                    type="number"
+                    name="phone"
+                    placeholder="Phone"
+                    className={styles.field}
+                  />
+                  <ErrorMessage
+                    className={styles.error}
+                    name="phone"
+                    component="span"
+                  />
+                </li>
 
-                    <li className={styles.item}>
-                      <Field
-                        className={styles.textarea}
-                        as="textarea"
-                        name="message"
-                        placeholder="Message"
-                      ></Field>
-                    </li>
-                  </ul>
-                </Form>
-                {/* Кнопка поза формою, але прив’язана до handleSubmit */}
-                <button
-                  type="button"
-                  onClick={handleSubmit}
-                  className={styles.button}
-                >
-                  Submit
-                </button>
-              </>
-            )}
+                <li className={styles.item}>
+                  <Field
+                    className={styles.textarea}
+                    as="textarea"
+                    name="message"
+                    placeholder="Message"
+                  />
+                  <ErrorMessage
+                    className={styles.error}
+                    name="message"
+                    component="span"
+                  />
+                </li>
+              </ul>
+
+              <button type="submit" className={styles.button}>
+                Book Session
+              </button>
+            </Form>
           </Formik>
+          <ToastContainer
+            className={styles.notification}
+            position="top-center"
+            hideProgressBar={true}
+            pauseOnHover={false}
+            draggable={false}
+            autoClose={3000}
+          />
         </div>
       </div>
     </Modal>
