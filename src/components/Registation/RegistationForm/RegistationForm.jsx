@@ -18,57 +18,48 @@ export default function RegistationForm() {
 
   return (
     <Formik initialValues={initialValues} onSubmit={handleSubmit}>
-      {({ handleSubmit }) => (
-        <>
-          <Form className={styles.form}>
-            <ul className={styles.list}>
-              <li className={styles.item}>
-                <Field
-                  type="text"
-                  name="username"
-                  placeholder={t("registration.placeholders.name")}
-                  className={styles.field}
-                />
-              </li>
+      <Form className={styles.form}>
+        <ul className={styles.list}>
+          <li className={styles.item}>
+            <Field
+              type="text"
+              name="username"
+              placeholder={t("registration.placeholders.name")}
+              className={styles.field}
+            />
+          </li>
 
-              <li className={styles.item}>
-                <Field
-                  type="email"
-                  name="email"
-                  placeholder={t("registration.placeholders.email")}
-                  className={styles.field}
-                />
-              </li>
+          <li className={styles.item}>
+            <Field
+              type="email"
+              name="email"
+              placeholder={t("registration.placeholders.email")}
+              className={styles.field}
+            />
+          </li>
 
-              <li className={styles.item}>
-                <Field
-                  type="number"
-                  name="phone"
-                  placeholder={t("registration.placeholders.phone")}
-                  className={styles.field}
-                />
-              </li>
+          <li className={styles.item}>
+            <Field
+              type="number"
+              name="phone"
+              placeholder={t("registration.placeholders.phone")}
+              className={styles.field}
+            />
+          </li>
 
-              <li className={styles.item}>
-                <Field
-                  className={styles.textarea}
-                  as="textarea"
-                  name="message"
-                  placeholder={t("registration.placeholders.message")}
-                ></Field>
-              </li>
-            </ul>
-          </Form>
-          {/* Кнопка поза формою, але прив’язана до handleSubmit */}
-          <button
-            type="button"
-            onClick={handleSubmit}
-            className={styles.button}
-          >
-            {t("registration.button")}
-          </button>
-        </>
-      )}
+          <li className={styles.item}>
+            <Field
+              className={styles.textarea}
+              as="textarea"
+              name="message"
+              placeholder={t("registration.placeholders.message")}
+            ></Field>
+          </li>
+        </ul>
+        <button type="submit" onClick={handleSubmit} className={styles.button}>
+          {t("registration.button")}
+        </button>
+      </Form>
     </Formik>
   );
 }

@@ -1,12 +1,4 @@
 .form {
-  padding: 32px 16px;
-  border-radius: 20px;
-  background: linear-gradient(
-    180deg,
-    rgba(1, 198, 87, 0.1) 0%,
-    rgba(0, 164, 91, 0.1) 50%,
-    rgba(6, 99, 202, 0.1) 100%
-  );
 }
 
 .list {
@@ -14,6 +6,15 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  padding: 32px 8px;
+  border-radius: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(1, 198, 87, 0.1) 0%,
+    rgba(0, 164, 91, 0.1) 50%,
+    rgba(6, 99, 202, 0.1) 100%
+  );
 }
 
 .item {
@@ -74,35 +75,27 @@
 }
 
 @media (min-width: 744px) {
-  .form {
-    padding: 56px 24px;
-  }
-
   .list {
     gap: 24px;
+    padding: 56px 24px;
   }
 
   .button {
     margin-top: 40px;
     color: var(--Body-Soft-White, #f9fafa);
 
-    /* font-family: Lato; */
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 32px; /* 133.333% */
+    line-height: 32px;
     letter-spacing: 0.5px;
   }
 }
 
 @media (min-width: 1440px) {
-  .form {
-    width: 486px;
-    padding: 40px 24px;
-  }
-
   .list {
     gap: 32px;
+    padding: 40px 16px;
   }
 
   .button {
