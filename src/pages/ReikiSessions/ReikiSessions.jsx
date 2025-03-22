@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Section from "../../components/shared/Section/Section";
 import styles from "./ReikiSessions.module.css";
 import CustomModal from "../../components/CustomModal/CustomModal";
+import { t } from "i18next";
 
 export default function ReikiSessions() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -39,82 +40,81 @@ export default function ReikiSessions() {
         />
       </div>
 
-      <h2 className={styles.title}>Individual Reiki Sessions</h2>
-      <p className={styles.text}>
-        Individual Reiki Sessions help deeply relax, restore energetic balance,
-        and support physical and emotional well-being. During the session, the
-        Reiki practitioner places their hands on specific areas of the body or
-        works within the client’s energy field, promoting the harmonization of
-        life energy.
-      </p>
+      <h2 className={styles.title}>{t("reikiSessions.block1.title")}</h2>
+      <p className={styles.text}>{t("reikiSessions.block1.text")}</p>
 
       <div className={styles.main_wrapper}>
         <div className={styles.wrapper}>
-          <h3 className={styles.second_title}>What to Expect:</h3>
+          <h3 className={styles.second_title}>
+            {t("reikiSessions.block1.expect.title")}
+          </h3>
           <ul className={styles.list}>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Deep relaxation and tension release.
+                {t("reikiSessions.block1.expect.text1")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                A sensation of warmth or tingling during the session.
+                {t("reikiSessions.block1.expect.text2")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Overall improvement in well-being and emotional state.
+                {t("reikiSessions.block1.expect.text3")}
               </p>
             </li>
           </ul>
         </div>
         <div className={styles.wrapper}>
-          <h3 className={styles.second_title}>Benefits:</h3>
+          <h3 className={styles.second_title}>
+            {t("reikiSessions.block1.benefits.title")}
+          </h3>
           <ul className={styles.list}>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Reduction of stress and anxiety levels.
+                {t("reikiSessions.block1.benefits.text1")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Improved energetic balance of the body.
+                {t("reikiSessions.block1.benefits.text2")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Support for physical health and pain relief.
+                {t("reikiSessions.block1.benefits.text3")}
               </p>
             </li>
           </ul>
         </div>
         <div className={styles.wrapper}>
-          <h3 className={styles.second_title}>Who It’s For:</h3>
+          <h3 className={styles.second_title}>
+            {t("reikiSessions.block1.whoItsFor.title")}
+          </h3>
           <ul className={styles.list}>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                People looking for a way to relax and relieve tension.
+                {t("reikiSessions.block1.whoItsFor.text1")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Those going through a challenging period in life and in need of
-                emotional support.
+                {t("reikiSessions.block1.whoItsFor.text2")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Individuals interested in energy practices and self-development.
+                {t("reikiSessions.block1.whoItsFor.text3")}
               </p>
             </li>
           </ul>
@@ -122,16 +122,20 @@ export default function ReikiSessions() {
 
         <div>
           <div className={styles.wrapper}>
-            <h3 className={styles.second_title}>Duration & Format:</h3>
+            <h3 className={styles.second_title}>
+              {t("reikiSessions.block1.durationAndFormat.title")}
+            </h3>
             <ul className={styles.list}>
               <li className={styles.item}>
                 <img src="/icons/MyStory/diamond.svg" alt="icon" />
-                <p className={styles.second_text}>Duration: 60 minutes.</p>
+                <p className={styles.second_text}>
+                  {t("reikiSessions.block1.durationAndFormat.text1")}
+                </p>
               </li>
               <li className={styles.item}>
                 <img src="/icons/MyStory/diamond.svg" alt="icon" />
                 <p className={styles.second_text}>
-                  Format: In-person or online.
+                  {t("reikiSessions.block1.durationAndFormat.text2")}
                 </p>
               </li>
             </ul>
@@ -140,7 +144,7 @@ export default function ReikiSessions() {
             onClick={() => setModalIsOpen(true)}
             className={styles.button}
           >
-            Book Session
+            {t("reikiSessions.block1.button")}
           </button>
         </div>
       </div>
@@ -152,84 +156,82 @@ export default function ReikiSessions() {
       />
 
       <div className={styles.main_wrapper}>
-        <h2 className={styles.title}>Group Reiki Session</h2>
-        <p className={styles.text}>
-          Group Reiki sessions take place in a shared atmosphere where
-          participants interact with each other and receive energetic support
-          from the practitioner. These gatherings may include meditations,
-          tuning into positive energy, and collective healing.
-        </p>
+        <h2 className={styles.title}>{t("reikiSessions.block2.title")}</h2>
+        <p className={styles.text}>{t("reikiSessions.block2.text")}</p>
 
         <div className={styles.wrapper}>
-          <h3 className={styles.second_title}>What to Expect:</h3>
+          <h3 className={styles.second_title}>
+            {t("reikiSessions.block2.expect.title")}
+          </h3>
           <ul className={styles.list}>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Shared practice in a friendly environment.
+                {t("reikiSessions.block2.expect.text1")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                A sense of harmony and unity with the group.
+                {t("reikiSessions.block2.expect.text2")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Improved emotional state and infusion of positive energy.
+                {t("reikiSessions.block2.expect.text3")}
               </p>
             </li>
           </ul>
         </div>
 
         <div className={styles.wrapper}>
-          <h3 className={styles.second_title}>Benefits:</h3>
+          <h3 className={styles.second_title}>
+            {t("reikiSessions.block2.benefits.title")}
+          </h3>
           <ul className={styles.list}>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Enhanced energetic effect through group interaction.
+                {t("reikiSessions.block2.benefits.text1")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Community support and experience exchange.
+                {t("reikiSessions.block2.benefits.text2")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Increased awareness and inner peace.
+                {t("reikiSessions.block2.benefits.text3")}
               </p>
             </li>
           </ul>
         </div>
 
         <div className={styles.wrapper}>
-          <h3 className={styles.second_title}>Who It’s For:</h3>
+          <h3 className={styles.second_title}>
+            {t("reikiSessions.block2.whoItsFor.title")}
+          </h3>
           <ul className={styles.list}>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                People who feel the need for support from like-minded
-                individuals.
+                {t("reikiSessions.block2.whoItsFor.text1")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Those who want to combine Reiki with meditation in a group
-                setting.
+                {t("reikiSessions.block2.whoItsFor.text2")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Individuals looking for new ways to relieve stress and achieve
-                inner harmony.
+                {t("reikiSessions.block2.whoItsFor.text3")}
               </p>
             </li>
           </ul>
@@ -237,15 +239,21 @@ export default function ReikiSessions() {
 
         <div>
           <div className={styles.wrapper}>
-            <h3 className={styles.second_title}>Duration & Format:</h3>
+            <h3 className={styles.second_title}>
+              {t("reikiSessions.block2.durationAndFormat.title")}
+            </h3>
             <ul className={styles.list}>
               <li className={styles.item}>
                 <img src="/icons/MyStory/diamond.svg" alt="icon" />
-                <p className={styles.second_text}>Duration: 90 minutes.</p>
+                <p className={styles.second_text}>
+                  {t("reikiSessions.block2.durationAndFormat.text1")}
+                </p>
               </li>
               <li className={styles.item}>
                 <img src="/icons/MyStory/diamond.svg" alt="icon" />
-                <p className={styles.second_text}>Format: In-person.</p>
+                <p className={styles.second_text}>
+                  {t("reikiSessions.block2.durationAndFormat.text2")}
+                </p>
               </li>
             </ul>
           </div>
@@ -254,7 +262,7 @@ export default function ReikiSessions() {
             onClick={() => setModalIsOpen(true)}
             className={styles.button}
           >
-            Book Session
+            {t("reikiSessions.block2.button")}
           </button>
         </div>
       </div>
@@ -265,82 +273,83 @@ export default function ReikiSessions() {
         alt="hands around moon"
       />
 
-      <h2 className={styles.title}>Reiki Meditation</h2>
-      <p className={styles.text}>
-        Reiki meditations help cleanse energy channels, restore inner peace, and
-        enhance vitality. The practice includes special breathing techniques,
-        visualization, and concentration on energy flows.
-      </p>
+      <h2 className={styles.title}>{t("reikiSessions.block3.title")}</h2>
+      <p className={styles.text}>{t("reikiSessions.block3.text")}</p>
 
       <div className={styles.main_wrapper}>
         <div className={styles.wrapper}>
-          <h3 className={styles.second_title}>What to Expect:</h3>
+          <h3 className={styles.second_title}>
+            {t("reikiSessions.block3.expect.title")}
+          </h3>
           <ul className={styles.list}>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Deep relaxation and release of emotional tension.
+                {t("reikiSessions.block3.expect.text1")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Improved concentration and inner balance.
+                {t("reikiSessions.block3.expect.text2")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Gradual increase in energy sensitivity.
+                {t("reikiSessions.block3.expect.text3")}
               </p>
             </li>
           </ul>
         </div>
 
         <div className={styles.wrapper}>
-          <h3 className={styles.second_title}>Benefits:</h3>
+          <h3 className={styles.second_title}>
+            {t("reikiSessions.block3.benefits.title")}
+          </h3>
           <ul className={styles.list}>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Helps release negative emotions.
+                {t("reikiSessions.block3.benefits.text1")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Strengthens the connection with one’s body and intuition.
+                {t("reikiSessions.block3.benefits.text2")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Aids in unlocking inner potential and raising awareness levels.
+                {t("reikiSessions.block3.benefits.text3")}
               </p>
             </li>
           </ul>
         </div>
 
         <div className={styles.wrapper}>
-          <h3 className={styles.second_title}>Who It’s For:</h3>
+          <h3 className={styles.second_title}>
+            {t("reikiSessions.block3.whoItsFor.title")}
+          </h3>
           <ul className={styles.list}>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                People who want to learn how to manage their own energy.
+                {t("reikiSessions.block3.whoItsFor.text1")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Those seeking to improve concentration and inner harmony.
+                {t("reikiSessions.block3.whoItsFor.text2")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Individuals looking for an effective meditation method for daily
-                life.
+                {t("reikiSessions.block3.whoItsFor.text3")}
               </p>
             </li>
           </ul>
@@ -348,16 +357,20 @@ export default function ReikiSessions() {
 
         <div>
           <div className={styles.wrapper}>
-            <h3 className={styles.second_title}>Duration & Format:</h3>
+            <h3 className={styles.second_title}>
+              {t("reikiSessions.block3.durationAndFormat.title")}
+            </h3>
             <ul className={styles.list}>
               <li className={styles.item}>
                 <img src="/icons/MyStory/diamond.svg" alt="icon" />
-                <p className={styles.second_text}>Duration: 45 minutes.</p>
+                <p className={styles.second_text}>
+                  {t("reikiSessions.block3.durationAndFormat.text1")}
+                </p>
               </li>
               <li className={styles.item}>
                 <img src="/icons/MyStory/diamond.svg" alt="icon" />
                 <p className={styles.second_text}>
-                  Format: In-person or online.
+                  {t("reikiSessions.block3.durationAndFormat.text2")}
                 </p>
               </li>
             </ul>
@@ -366,7 +379,7 @@ export default function ReikiSessions() {
             onClick={() => setModalIsOpen(true)}
             className={styles.button}
           >
-            Book Session
+            {t("reikiSessions.block3.button")}
           </button>
         </div>
       </div>
@@ -377,86 +390,83 @@ export default function ReikiSessions() {
         alt="hands and butterfly"
       />
 
-      <h2 className={styles.title}>Reiki Training</h2>
-      <p className={styles.text}>
-        Reiki training is a journey of self-discovery, the development of
-        energetic abilities, and an opportunity to help oneself and others. The
-        course consists of theoretical and practical lessons, during which
-        students receive initiation into the corresponding Reiki level.
-      </p>
+      <h2 className={styles.title}>{t("reikiSessions.block4.title")}</h2>
+      <p className={styles.text}>{t("reikiSessions.block4.text")}</p>
 
       <div className={styles.main_wrapper}>
         <div className={styles.wrapper}>
-          <h3 className={styles.second_title}>What to Expect:</h3>
+          <h3 className={styles.second_title}>
+            {t("reikiSessions.block4.expect.title")}
+          </h3>
           <ul className={styles.list}>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Learning the fundamental principles of Reiki and energy
-                practices.
+                {t("reikiSessions.block4.expect.text1")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Mastering techniques for self-healing and working with others
-                energy.
+                {t("reikiSessions.block4.expect.text2")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Gradual deepening of the connection with universal life energy.
+                {t("reikiSessions.block4.expect.text3")}
               </p>
             </li>
           </ul>
         </div>
 
         <div className={styles.wrapper}>
-          <h3 className={styles.second_title}>Benefits:</h3>
+          <h3 className={styles.second_title}>
+            {t("reikiSessions.block4.benefits.title")}
+          </h3>
           <ul className={styles.list}>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                The ability to practice Reiki independently in daily life.
+                {t("reikiSessions.block4.benefits.text1")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Development of sensitivity to energy flows.
+                {t("reikiSessions.block4.benefits.text2")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Gaining skills that contribute to harmony and life improvement.
+                {t("reikiSessions.block4.benefits.text3")}
               </p>
             </li>
           </ul>
         </div>
 
         <div className={styles.wrapper}>
-          <h3 className={styles.second_title}>Who It’s For:</h3>
+          <h3 className={styles.second_title}>
+            {t("reikiSessions.block4.whoItsFor.title")}
+          </h3>
           <ul className={styles.list}>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                People who want to develop their own energetic abilities.
+                {t("reikiSessions.block4.whoItsFor.text1")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Those looking to help themselves and their loved ones through
-                Reiki.
+                {t("reikiSessions.block4.whoItsFor.text2")}
               </p>
             </li>
             <li className={styles.item}>
               <img src="/icons/MyStory/diamond.svg" alt="icon" />
               <p className={styles.second_text}>
-                Individuals seeking new methods of personal and spiritual
-                growth.
+                {t("reikiSessions.block4.whoItsFor.text3")}
               </p>
             </li>
           </ul>
@@ -464,18 +474,20 @@ export default function ReikiSessions() {
 
         <div>
           <div className={styles.wrapper}>
-            <h3 className={styles.second_title}>Duration & Format:</h3>
+            <h3 className={styles.second_title}>
+              {t("reikiSessions.block4.durationAndFormat.title")}
+            </h3>
             <ul className={styles.list}>
               <li className={styles.item}>
                 <img src="/icons/MyStory/diamond.svg" alt="icon" />
                 <p className={styles.second_text}>
-                  Duration: Depends on the level (from 1 day to several weeks).
+                  {t("reikiSessions.block4.durationAndFormat.text1")}
                 </p>
               </li>
               <li className={styles.item}>
                 <img src="/icons/MyStory/diamond.svg" alt="icon" />
                 <p className={styles.second_text}>
-                  Format: In-person or online.
+                  {t("reikiSessions.block4.durationAndFormat.text2")}
                 </p>
               </li>
             </ul>
@@ -485,7 +497,7 @@ export default function ReikiSessions() {
             onClick={() => setModalIsOpen(true)}
             className={styles.button}
           >
-            Book Session
+            {t("reikiSessions.block4.button")}
           </button>
         </div>
       </div>

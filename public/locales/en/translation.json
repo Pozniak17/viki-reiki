@@ -191,5 +191,129 @@
     "text": "Are you ready to change your life? To feel harmony? To learn how to manage your energy? I invite you to a Reiki session or to learn this beautiful art! Together, we will open a new world of possibilities for your body, mind, and soul.",
     "secondText": "Get in touch, and let’s begin your journey to harmony and inner strength!",
     "button": "Book Session"
+  },
+
+  "reikiSessions": {
+    "block1": {
+      "title": "Individual Reiki Session",
+      "text": "Individual Reiki sessions help deeply relax, restore energetic balance, and support physical and emotional well-being. During a session, the Reiki practitioner places their hands on specific areas of the body or works within the client's energy field, promoting the harmonization of life energy.",
+      "button": "Book Session",
+      "expect": {
+        "title": "What to Expect:",
+        "text1": "Deep relaxation and tension release.",
+        "text2": "A sensation of warmth or tingling during the session.",
+        "text3": "Overall improvement in well-being and emotional state."
+      },
+      "benefits": {
+        "title": "Benefits:",
+        "text1": "Reduction of stress and anxiety levels.",
+        "text2": "Improved energetic balance of the body.",
+        "text3": "Support for physical health and pain relief."
+      },
+      "whoItsFor": {
+        "title": "Who It’s For:",
+        "text1": "People looking for a way to relax and relieve tension.",
+        "text2": "Those going through a challenging period in life and in need of emotional support.",
+        "text3": "Individuals interested in energy practices and self-development."
+      },
+      "durationAndFormat": {
+        "title": "Duration & Format:",
+        "text1": "Duration: 60 minutes.",
+        "text2": "Format: In-person or online."
+      }
+    },
+
+    "block2": {
+      "title": "Group Reiki Session",
+      "text": "Group Reiki sessions take place in a shared atmosphere where participants interact with each other and receive energetic support from the practitioner. These gatherings may include meditations, tuning into positive energy, and collective healing.",
+      "button": "Book Session",
+
+      "expect": {
+        "title": "What to Expect:",
+        "text1": "Shared practice in a friendly environment.",
+        "text2": "A sense of harmony and unity with the group.",
+        "text3": "Improved emotional state and infusion of positive energy."
+      },
+      "benefits": {
+        "title": "Benefits:",
+        "text1": "Enhanced energetic effect through group interaction.",
+        "text2": "Community support and experience exchange.",
+        "text3": "Increased awareness and inner peace."
+      },
+      "whoItsFor": {
+        "title": "Who It’s For:",
+        "text1": "People who feel the need for support from like-minded individuals.",
+        "text2": "Those who want to combine Reiki with meditation in a group setting.",
+        "text3": "Individuals looking for new ways to relieve stress and achieve inner harmony."
+      },
+
+      "durationAndFormat": {
+        "title": "Duration & Format:",
+        "text1": "Duration: 90 minutes.",
+        "text2": "Format: In-person."
+      }
+    },
+
+    "block3": {
+      "title": "Reiki Meditation",
+      "text": "Reiki meditations help cleanse energy channels, restore inner peace, and enhance vitality. The practice includes special breathing techniques, visualization, and concentration on energy flows.",
+      "button": "Book Session",
+
+      "expect": {
+        "title": "What to Expect:",
+        "text1": "Deep relaxation and release of emotional tension.",
+        "text2": "Improved concentration and inner balance.",
+        "text3": "Gradual increase in energy sensitivity."
+      },
+      "benefits": {
+        "title": "Benefits:",
+        "text1": "Helps release negative emotions.",
+        "text2": "Strengthens the connection with one’s body and intuition.",
+        "text3": "Aids in unlocking inner potential and raising awareness levels."
+      },
+      "whoItsFor": {
+        "title": "Who It’s For:",
+        "text1": "People who want to learn how to manage their own energy.",
+        "text2": "Those seeking to improve concentration and inner harmony.",
+        "text3": "Individuals looking for an effective meditation method for daily life."
+      },
+
+      "durationAndFormat": {
+        "title": "Duration & Format:",
+        "text1": "Duration: 45 minutes.",
+        "text2": "Format: In-person or online."
+      }
+    },
+
+    "block4": {
+      "title": "Reiki Training",
+      "text": "Reiki training is a journey of self-discovery, the development of energetic abilities, and an opportunity to help oneself and others. The course consists of theoretical and practical lessons, during which students receive initiation into the corresponding Reiki level.",
+      "button": "Book Session",
+
+      "expect": {
+        "title": "What to Expect:",
+        "text1": "Learning the fundamental principles of Reiki and energy practices.",
+        "text2": "Mastering techniques for self-healing and working with others' energy.",
+        "text3": "Gradual deepening of the connection with universal life energy."
+      },
+      "benefits": {
+        "title": "Benefits:",
+        "text1": "The ability to practice Reiki independently in daily life.",
+        "text2": "Development of sensitivity to energy flows.",
+        "text3": "Gaining skills that contribute to harmony and life improvement."
+      },
+      "whoItsFor": {
+        "title": "Who It’s For:",
+        "text1": "People who want to develop their own energetic abilities.",
+        "text2": "Those looking to help themselves and their loved ones through Reiki.",
+        "text3": "Individuals seeking new methods of personal and spiritual growth."
+      },
+
+      "durationAndFormat": {
+        "title": "Duration & Format:",
+        "text1": "Duration: Depends on the level (from 1 day to several weeks).",
+        "text2": "Format: In-person or online."
+      }
+    }
   }
 }
