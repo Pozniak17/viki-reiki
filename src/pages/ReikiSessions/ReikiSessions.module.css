@@ -80,6 +80,7 @@
   border-radius: 30px;
   background: #4194b7;
   border: inherit;
+  cursor: pointer;
 }
 
 .icon_image {
