@@ -156,14 +156,60 @@
 
 .authors {
   position: absolute;
-  width: 339px;
-  height: 265px;
-  padding: 20px;
+  width: 264px;
+  height: 232px;
+  padding: 16px;
+
+  top: 61%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   border-radius: 20px;
   background: #fff;
-  /* opacity: 1; */
   transition: opacity 0.3s ease-in-out;
+}
+
+.author_title {
+  color: var(--title-main-title, #00758f);
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 175% */
+  letter-spacing: 0.08px;
+}
+
+.authors_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.author_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.author_images {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.author_link {
+  text-decoration: none;
+}
+
+.author_text {
+  color: #000;
+  text-align: start;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
 }
 
 @media (min-width: 744px) {
@@ -208,7 +254,7 @@
 
   .copyright {
     color: #fff;
-    /* font-family: Lato; */
+
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.6px;
@@ -255,12 +301,17 @@
     color: var(--Body-Soft-White, #f9fafa);
     text-decoration: none;
 
-    /* font-family: Lato; */
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: 32px; /* 133.333% */
     letter-spacing: 0.5px;
+  }
+
+  .menu_link:hover,
+  .menu_link:focus {
+    color: var(--body-beige, #ffdfcb);
+    transition: color 150ms ease-in-out 150ms;
   }
 
   .third_wrapper {
@@ -270,8 +321,18 @@
   }
 
   .authors {
-    top: 105px;
-    right: 359px;
+    position: absolute;
+    width: 339px;
+    height: 265px;
+    padding: 20px;
+
+    top: 61%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 20px;
+    background: #fff;
+    transition: opacity 0.3s ease-in-out;
   }
 
   .author_link {
@@ -281,8 +342,6 @@
   .authors_list {
     list-style: none;
 
-    display: flex;
-    flex-direction: column;
     gap: 32px;
   }
 
@@ -292,15 +351,9 @@
     gap: 24px;
   }
 
-  .author_images {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-  }
-
   .author_title {
     color: var(--title-main-title, #00758f);
-    /* font-family: Lato; */
+
     font-size: 24px;
     font-style: normal;
     font-weight: 700;

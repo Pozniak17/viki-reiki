@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
+import clsx from "clsx";
 import Container from "../shared/Container/Container";
 import styles from "./Header.module.css";
 import language from "/icons/language.svg";
 import MobileMenu from "../MobileMenu/MobileMenu";
 import Icon from "../shared/Icon/Icon";
-import clsx from "clsx";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
