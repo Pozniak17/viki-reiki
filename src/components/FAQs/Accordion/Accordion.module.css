@@ -37,7 +37,6 @@
 .questions {
   color: var(--Body-Grey, #414343);
 
-  font-family: Lato;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -48,8 +47,6 @@
   margin-top: 12px;
   color: #414343;
 
-  /* Desktop/Body/Medium */
-  font-family: Lato;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -76,7 +73,6 @@
   .questions {
     color: var(--Body-Grey, #414343);
 
-    font-family: Lato;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;

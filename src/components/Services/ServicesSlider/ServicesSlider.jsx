@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { t } from "i18next";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -32,9 +33,13 @@ export default function ServicesSlider() {
           },
         }}
       >
-        {services.map((item) => (
-          <SwiperSlide key={item.id}>
-            <ServicesCard image={item.image} text={item.text} />
+        {services.map(({ id, image }) => (
+          <SwiperSlide key={id}>
+            <ServicesCard
+              image={image}
+              title={t(`services.cards.servicesCard${id}.title`)}
+              text={t(`services.cards.servicesCard${id}.text`)}
+            />
           </SwiperSlide>
         ))}
       </Swiper>

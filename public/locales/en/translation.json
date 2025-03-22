@@ -91,30 +91,53 @@
 
   "FAQs": {
     "title": "FAQs",
-    "accordion": {
-      "questions": {
-        "questions1": "What is Reiki, and how does it work?",
-        "questions2": "What’s the difference between Reiki and traditional medicine?",
-        "questions3": "How do I know if Reiki is right for me?",
-        "questions4": "Is Reiki only for people with health issues?",
-        "questions5": "Do you offer a free initial consultation?",
-        "questions6": "How long does a typical Reiki session last?",
-        "questions7": "How private and confidential is a Reiki session?",
-        "questions8": "Is there a specific location for in-person Reiki sessions?",
-        "questions9": "Do you offer Reiki sessions in-person, online, or both?"
+    "accordion": [
+      {
+        "id": 1,
+        "question": "What is Reiki, and how does it work?",
+        "answer": "Reiki is a gentle energy healing practice that promotes relaxation and balance by channeling universal life energy through the hands of a practitioner."
+      },
+      {
+        "id": 2,
+        "question": "What’s the difference between Reiki and traditional medicine?",
+        "answer": "Reiki is a holistic, complementary therapy that supports overall well-being, while traditional medicine focuses on diagnosing and treating specific medical conditions."
+      },
+      {
+        "id": 3,
+        "question": "How do I know if Reiki is right for me?",
+        "answer": "If you're looking for relaxation, stress relief, or energetic balance, Reiki may be beneficial. You’re welcome to try a session and see how it feels for you."
+      },
+      {
+        "id": 4,
+        "question": "Is Reiki only for people with health issues?",
+        "answer": "No, Reiki is for anyone seeking relaxation, emotional balance, or personal growth, regardless of health status."
+      },
+      {
+        "id": 5,
+        "question": "Do you offer a free initial consultation?",
+        "answer": "Yes, I offer a brief initial consultation to discuss your needs and answer any questions."
+      },
+      {
+        "id": 6,
+        "question": "How long does a typical Reiki session last?",
+        "answer": "A standard session lasts between 45 to 60 minutes."
+      },
+      {
+        "id": 7,
+        "question": "How private and confidential is a Reiki session?",
+        "answer": "Reiki sessions are completely private and confidential, ensuring a safe and comfortable experience."
+      },
+      {
+        "id": 8,
+        "question": "Is there a specific location for in-person Reiki sessions?",
+        "answer": "Yes, in-person sessions are available at the Athlone studio."
+      },
+      {
+        "id": 9,
+        "question": "Do you offer Reiki sessions in-person, online, or both?",
+        "answer": "I offer both in-person and online Reiki sessions to accommodate different preferences."
       }
-    },
-    "answers": {
-      "answers1": "Reiki is a gentle energy healing practice that promotes relaxation and balance by channeling universal life energy through the hands of a practitioner.",
-      "answers2": "Reiki is a holistic, complementary therapy that supports overall well-being, while traditional medicine focuses on diagnosing and treating specific medical conditions.",
-      "answers3": "If you're looking for relaxation, stress relief, or energetic balance, Reiki may be beneficial. You’re welcome to try a session and see how it feels for you.",
-      "answers4": "No, Reiki is for anyone seeking relaxation, emotional balance, or personal growth, regardless of health status.",
-      "answers5": "Yes, I offer a brief initial consultation to discuss your needs and answer any questions.",
-      "answers6": "A standard session lasts between 45 to 60 minutes.",
-      "answers7": "Reiki sessions are completely private and confidential, ensuring a safe and comfortable experience.",
-      "answers8": "Yes, in-person sessions are available at the Athlone studio.",
-      "answers9": "I offer both in-person and online Reiki sessions to accommodate different preferences."
-    }
+    ]
   },
   "registration": {
     "title": "Register for the Session",

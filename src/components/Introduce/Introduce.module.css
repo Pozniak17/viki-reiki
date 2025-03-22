@@ -52,6 +52,7 @@
 }
 
 .button {
+  text-decoration: none;
   width: 100%;
   border-radius: 30px;
   border: 2px solid var(--Button-Tertiary-reset-text, #4194b7);

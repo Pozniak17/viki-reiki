@@ -134,14 +134,20 @@
 .copyright {
   cursor: pointer;
   margin-top: 24px;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
-  /* font-family: Lato; */
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 16px; /* 133.333% */
+  line-height: 16px;
   letter-spacing: 0.6px;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.copyright:hover,
+.copyright:focus {
+  color: #feca57; /* Золотистий колір при наведенні */
+  text-shadow: 0 0 8px rgba(254, 202, 87, 0.8); /* Світіння */
 }
 
 .footer_menu {
@@ -192,11 +198,11 @@
   .logo_title {
     display: block;
     color: var(--Body-Soft-White, #f9fafa);
-    /* font-family: Lato; */
+
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
-    line-height: 36px; /* 112.5% */
+    line-height: 36px;
     letter-spacing: 0.5px;
   }
 

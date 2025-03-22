@@ -91,31 +91,55 @@
 
   "FAQs": {
     "title": "Поширені запитання",
-    "accordion": {
-      "questions": {
-        "questions1": "Що таке Рейкі і як воно працює?",
-        "questions2": "Чим відрізняється Рейкі від традиційної медицини?",
-        "questions3": "Як зрозуміти, чи підходить мені Рейкі?",
-        "questions4": "Чи підходить Рейкі лише людям із проблемами зі здоров’ям?",
-        "questions5": "Чи пропонуєте ви безкоштовну початкову консультацію?",
-        "questions6": "Скільки триває типова сесія Рейкі?",
-        "questions7": "Наскільки конфіденційними є сеанси?",
-        "questions8": "Чи є у вас офлайн-локація для проведення сесій?",
-        "questions9": "Чи можна пройти сеанс особисто, онлайн або в обох форматах?"
+    "accordion": [
+      {
+        "id": 1,
+        "question": "Що таке Рейкі і як воно працює?",
+        "answer": "Рейки – це м'яка практика енергетичного зцілення, яка сприяє розслабленню та гармонії, спрямовуючи універсальну життєву енергію через руки практикуючого."
+      },
+      {
+        "id": 2,
+        "question": "Чим відрізняється Рейкі від традиційної медицини?",
+        "answer": "Рейки – це цілісна, додаткова терапія, що підтримує загальне благополуччя, тоді як традиційна медицина зосереджується на діагностиці та лікуванні конкретних медичних станів."
+      },
+      {
+        "id": 3,
+        "question": "Як зрозуміти, чи підходить мені Рейкі?",
+        "answer": "Якщо ви шукаєте розслаблення, зняття стресу або енергетичний баланс, Рейки може бути корисним. Ви можете спробувати сеанс і відчути його вплив на собі."
+      },
+      {
+        "id": 4,
+        "question": "Чи підходить Рейкі лише людям із проблемами зі здоров’ям?",
+        "answer": "Ні, Рейки підходить для всіх, хто прагне розслаблення, емоційної рівноваги або особистісного зростання, незалежно від стану здоров'я."
+      },
+      {
+        "id": 5,
+        "question": "Чи пропонуєте ви безкоштовну початкову консультацію?",
+        "answer": "Так, я пропоную коротку початкову консультацію для обговорення ваших потреб і відповідей на запитання."
+      },
+      {
+        "id": 6,
+        "question": "Скільки триває типова сесія Рейкі?",
+        "answer": "Стандартний сеанс триває від 45 до 60 хвилин."
+      },
+      {
+        "id": 7,
+        "question": "Наскільки конфіденційними є сеанси?",
+        "answer": "Сеанси Рейки є повністю приватними та конфіденційними, що гарантує безпечну і комфортну атмосферу."
+      },
+      {
+        "id": 8,
+        "question": "Чи є у вас офлайн-локація для проведення сесій?",
+        "answer": "Так, особисті сеанси доступні в студії в Атлоні."
+      },
+      {
+        "id": 9,
+        "question": "Чи можна пройти сеанс особисто, онлайн або в обох форматах?",
+        "answer": "Я пропоную як очні, так і онлайн-сеанси Рейки, щоб задовольнити різні вподобання."
       }
-    },
-    "answers": {
-      "answers1": "Reiki is a gentle energy healing practice that promotes relaxation and balance by channeling universal life energy through the hands of a practitioner.",
-      "answers2": "Reiki is a holistic, complementary therapy that supports overall well-being, while traditional medicine focuses on diagnosing and treating specific medical conditions.",
-      "answers3": "If you're looking for relaxation, stress relief, or energetic balance, Reiki may be beneficial. You’re welcome to try a session and see how it feels for you.",
-      "answers4": "No, Reiki is for anyone seeking relaxation, emotional balance, or personal growth, regardless of health status.",
-      "answers5": "Yes, I offer a brief initial consultation to discuss your needs and answer any questions.",
-      "answers6": "A standard session lasts between 45 to 60 minutes.",
-      "answers7": "Reiki sessions are completely private and confidential, ensuring a safe and comfortable experience.",
-      "answers8": "Yes, in-person sessions are available at the Athlone studio.",
-      "answers9": "I offer both in-person and online Reiki sessions to accommodate different preferences."
-    }
+    ]
   },
+
   "registration": {
     "title": "Записатися на сеанс",
     "text": "Почнімо! Отримайте безкоштовну 30-хвилинну консультацію вже сьогодні:",

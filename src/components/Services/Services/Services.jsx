@@ -1,10 +1,10 @@
 import { useMediaQuery } from "react-responsive";
+import { useTranslation } from "react-i18next";
 
 import Section from "../../shared/Section/Section";
 import styles from "./Services.module.css";
 import ServicesList from "../ServicesList/ServicesList";
 import ServicesSlider from "../ServicesSlider/ServicesSlider";
-import { useTranslation } from "react-i18next";
 
 export default function Services() {
   const { t } = useTranslation();
@@ -13,7 +13,9 @@ export default function Services() {
   });
   return (
     <Section>
-      <h2 className={styles.title}>{t("services.servicesTitle")}</h2>
+      <h2 id="services" className={styles.title}>
+        {t("services.servicesTitle")}
+      </h2>
       <p className={styles.text}>{t("services.servicesText")}</p>
 
       {isTabletScreen ? <ServicesList /> : <ServicesSlider />}

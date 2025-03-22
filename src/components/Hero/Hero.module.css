@@ -76,10 +76,8 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 32px; /* 160% */
-  letter-spacing: 0.1px;
-
-  padding: 6px 24px;
+  line-height: 28px;
+  padding: 8px 24px;
 
   border-radius: 30px;
   background: #f7b84b;
@@ -113,6 +111,40 @@
   transform: translate(-50%, -50%);
 }
 
+.ukrainian_title {
+  color: #4c5578;
+  text-align: center;
+  text-shadow: 0px 4px 40px var(--stroke-shadows-pink, #ffe3f6);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0.72px;
+}
+
+.ukrainian_button {
+  z-index: 1;
+  display: inline-flex;
+  border: inherit;
+  padding: 8px 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  border-radius: 30px;
+  background: #f7b84b;
+}
+
+.ukrainian_button:hover,
+.ukrainian_button:focus {
+  background: #f6a048;
+  color: #fff;
+}
+
 @media (min-width: 744px) {
   .hero {
     background-image: url("/images/Hero/Tablet/Hero-tablet-1x.jpg");
@@ -134,6 +166,18 @@
     font-size: 56px;
     line-height: 64px;
     letter-spacing: 1.12px;
+  }
+
+  .ukrainian_title {
+    margin-bottom: 32px;
+    color: #4c5578;
+    text-align: center;
+    text-shadow: 0px 4px 40px var(--stroke-shadows-pink, #ffe3f6);
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 110.345% */
+    letter-spacing: 1.16px;
   }
   .hero_text {
     margin-bottom: 32px;
@@ -181,6 +225,18 @@
     letter-spacing: 1.92px;
   }
 
+  .ukrainian_title {
+    color: #4c5578;
+    text-align: center;
+    text-shadow: 0px 4px 40px var(--stroke-shadows-pink, #ffe3f6);
+
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px; /* 112.5% */
+    letter-spacing: 1.92px;
+  }
+
   .hero_text {
     font-size: 20px;
     line-height: 32px;
@@ -201,5 +257,28 @@
   .hero_cirleText {
     width: 614px;
     height: 623px;
+  }
+
+  .ukrainian_button {
+    z-index: 1;
+    display: inline-flex;
+    width: 292px;
+    height: 64px;
+    padding: 18px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: inherit;
+    color: #fff;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 160% */
+    letter-spacing: 0.5px;
+    border-radius: 30px;
+    background: #f7b84b;
+    cursor: pointer;
   }
 }

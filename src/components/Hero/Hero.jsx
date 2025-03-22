@@ -6,8 +6,12 @@ import styles from "./Hero.module.css";
 import CustomModal from "../CustomModal/CustomModal";
 
 export default function Hero() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const isUkrainian = i18n.language === "ua"; //чи мова українська
+
+  console.log(i18n.language);
   return (
     <section className={styles.hero}>
       <picture>
@@ -23,7 +27,7 @@ export default function Hero() {
         />
         {/* Мобільні*/}
         <source
-          srcSet="/images/Hero/Mobile/Text-mobile-1x 1x, /images/Hero/Mobile/Text-mobile-2x.png 2x"
+          srcSet="/images/Hero/Mobile/Text-mobile-1x.png 1x, /images/Hero/Mobile/Text-mobile-2x.png 2x"
           media="(max-width: 743px)"
         />
         {/* Дефолт */}
@@ -36,7 +40,7 @@ export default function Hero() {
 
       <div className={styles.hero_circle}>
         <motion.h1
-          className={styles.hero_title}
+          className={isUkrainian ? styles.ukrainian_title : styles.hero_title}
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
@@ -53,9 +57,9 @@ export default function Hero() {
         </motion.h2>
         <motion.button
           onClick={() => setModalIsOpen(true)}
-          className={styles.hero_button}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95, originX: 0.5, originY: 0.5 }}
+          className={isUkrainian ? styles.ukrainian_button : styles.hero_button}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.9, originX: 0.5, originY: 0.5 }}
         >
           {t("hero.heroButton")}
         </motion.button>

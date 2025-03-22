@@ -9,6 +9,7 @@ import "swiper/css/scrollbar";
 import CertificationCard from "../CertificationCard/CertificationCard";
 
 import certificates from "../../utils/json/certificates.json";
+import { t } from "i18next";
 
 export default function CertificationSlider() {
   return (
@@ -35,9 +36,12 @@ export default function CertificationSlider() {
         },
       }}
     >
-      {certificates.map((item) => (
-        <SwiperSlide key={item.id}>
-          <CertificationCard image={item.image} text={item.text} />
+      {certificates.map(({ id, image }) => (
+        <SwiperSlide key={id}>
+          <CertificationCard
+            image={image}
+            text={t(`certification.cards.certificationCard${id}`)}
+          />
         </SwiperSlide>
       ))}
     </Swiper>
