@@ -32,7 +32,7 @@ export default function Footer() {
     };
   }, [isOpen]);
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <footer className={styles.footer} id="footer">
       <Section>
@@ -115,8 +115,37 @@ export default function Footer() {
                   {t("header.nav5")}
                 </a>
               </li>
-              <li>
-                <img src={language} alt="language icon" />
+
+              <li className={styles.language_switcher}>
+                <img
+                  className={styles.language_icon}
+                  src={language}
+                  alt="change language"
+                />
+                <div className={styles.language_wrapper}>
+                  <ul className={styles.language_list}>
+                    <li>
+                      <button
+                        className={`${styles.language_button} ${
+                          i18n.language === "en" ? styles.active : ""
+                        }`}
+                        onClick={() => i18n.changeLanguage("en")}
+                      >
+                        Eng
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        className={`${styles.language_button} ${
+                          i18n.language === "ua" ? styles.active : ""
+                        }`}
+                        onClick={() => i18n.changeLanguage("ua")}
+                      >
+                        Ukr
+                      </button>
+                    </li>
+                  </ul>
+                </div>
               </li>
             </ul>
 
