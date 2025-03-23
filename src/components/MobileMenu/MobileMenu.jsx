@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import styles from "./MobileMenu.module.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import Icon from "../shared/Icon/Icon";
+import clsx from "clsx";
 
 export default function MobileMenu({ isOpen, onToggle }) {
   //  мочим скрооол)
@@ -11,6 +12,28 @@ export default function MobileMenu({ isOpen, onToggle }) {
       document.body.style.overflow = "auto";
     };
   }, [isOpen]);
+
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (location.pathname === "/" && location.hash === "#FAQs") {
+      const element = document.getElementById("FAQs");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
+  const handleFaqClick = (e) => {
+    e.preventDefault();
+    navigate("/#FAQs");
+  };
+
+  const buildLinkClass = ({ isActive }) => {
+    return clsx(styles.menu_link, isActive && styles.active_link);
+  };
+
   return (
     <>
       {isOpen && <div className={styles.overlay} onClick={onToggle}></div>}
@@ -21,22 +44,37 @@ export default function MobileMenu({ isOpen, onToggle }) {
       >
         <ul className={styles.mobile_list}>
           <li className={styles.mobile_item}>
-            <NavLink className={styles.link} onClick={onToggle} to="/story">
+            <NavLink className={buildLinkClass} onClick={onToggle} to="/story">
               My Story
             </NavLink>
           </li>
           <li className={styles.mobile_item}>
-            <NavLink className={styles.link} onClick={onToggle} to="/sessions">
+            <NavLink
+              className={buildLinkClass}
+              onClick={onToggle}
+              to="/sessions"
+            >
               Reiki Sessions
             </NavLink>
           </li>
           <li className={styles.mobile_item}>
-            <NavLink className={styles.link} onClick={onToggle} to="/calendar">
+            <NavLink
+              className={buildLinkClass}
+              onClick={onToggle}
+              to="/calendar"
+            >
               Calendar
             </NavLink>
           </li>
           <li className={styles.mobile_item}>
-            <a className={styles.link} onClick={onToggle} href="#FAQs">
+            <a
+              className={styles.link}
+              onClick={(e) => {
+                onToggle(e);
+                handleFaqClick(e);
+              }}
+              href="#FAQs"
+            >
               FAQs
             </a>
           </li>
