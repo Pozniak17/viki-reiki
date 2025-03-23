@@ -119,6 +119,38 @@
   color: var(--accent-bright-blue, #0663ca);
 }
 
+.language_wrapper {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+}
+
+.language_button {
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  background-color: #eee;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+  color: var(--Body-Text, #2c2727);
+
+  /* Desktop/Body/Small */
+  font-family: Lato;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  background-color: inherit;
+  border: 1px solid #007bff;
+}
+
+.active {
+  background-color: #007bff;
+  color: var(--body-beige, #ffdfcb);
+  font-weight: bold;
+}
+
 @media (min-width: 744px) and (max-width: 1439px) {
   .mobile_navigation {
     padding-top: 80px;

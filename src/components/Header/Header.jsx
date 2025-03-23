@@ -13,6 +13,7 @@ export default function Header() {
 
   const location = useLocation();
   const navigate = useNavigate();
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     if (location.pathname === "/" && location.hash === "#FAQs") {
@@ -31,7 +32,6 @@ export default function Header() {
   const handleMenuToggle = () => {
     setIsOpen(!isOpen);
   };
-  const { t, i18n } = useTranslation();
 
   const buildLinkClass = ({ isActive }) => {
     return clsx(styles.menu_link, isActive && styles.active_link);

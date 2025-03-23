@@ -146,7 +146,6 @@
 
 .language_switcher:hover .language_wrapper {
   display: block;
-  display: flex;
 }
 
 @media (max-width: 743px) {

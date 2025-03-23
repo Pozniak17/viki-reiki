@@ -3,6 +3,7 @@ import styles from "./MobileMenu.module.css";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import Icon from "../shared/Icon/Icon";
 import clsx from "clsx";
+import { useTranslation } from "react-i18next";
 
 export default function MobileMenu({ isOpen, onToggle }) {
   //  мочим скрооол)
@@ -15,6 +16,7 @@ export default function MobileMenu({ isOpen, onToggle }) {
 
   const location = useLocation();
   const navigate = useNavigate();
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     if (location.pathname === "/" && location.hash === "#FAQs") {
@@ -83,8 +85,27 @@ export default function MobileMenu({ isOpen, onToggle }) {
               Contact
             </a>
           </li>
+
           <li className={styles.mobile_item}>
-            <p className={styles.link}>Languages</p>
+            <div className={styles.language_wrapper}>
+              <button
+                className={`${styles.language_button} ${
+                  i18n.language === "en" ? styles.active : ""
+                }`}
+                onClick={() => i18n.changeLanguage("en")}
+              >
+                Eng
+              </button>
+
+              <button
+                className={`${styles.language_button} ${
+                  i18n.language === "ua" ? styles.active : ""
+                }`}
+                onClick={() => i18n.changeLanguage("ua")}
+              >
+                Ukr
+              </button>
+            </div>
           </li>
         </ul>
 
