@@ -9,6 +9,8 @@
   box-shadow: 0px 0px 8px 0px rgba(27, 54, 65, 0.08);
   color: white;
 
+  z-index: 1000;
+
   border: none;
   border-radius: 50%;
   cursor: pointer;
