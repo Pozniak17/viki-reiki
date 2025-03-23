@@ -1,12 +1,13 @@
 import { useEffect } from "react";
 import { Field, Form, Formik } from "formik";
 import Modal from "react-modal";
+import { toast, ToastContainer } from "react-toastify";
+import { useTranslation } from "react-i18next";
 import * as Yup from "yup";
 import { ErrorMessage } from "formik";
 import styles from "./CustomModal.module.css";
 import Icon from "../shared/Icon/Icon";
 import { sendMessageToTelegram } from "../utils/fetch/telegramApi";
-import { toast, ToastContainer } from "react-toastify";
 
 Modal.setAppElement("#modal");
 
@@ -33,6 +34,7 @@ const initialValues = {
 };
 
 export default function CustomModal({ isOpen, onClose }) {
+  const { t } = useTranslation();
   //  мочим скрооол)
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "auto";
@@ -97,7 +99,7 @@ export default function CustomModal({ isOpen, onClose }) {
                   <Field
                     type="text"
                     name="username"
-                    placeholder="Name"
+                    placeholder={t("registration.placeholders.name")}
                     className={styles.field}
                   />
                   <ErrorMessage
@@ -111,7 +113,7 @@ export default function CustomModal({ isOpen, onClose }) {
                   <Field
                     type="email"
                     name="email"
-                    placeholder="Email"
+                    placeholder={t("registration.placeholders.email")}
                     className={styles.field}
                   />
                   <ErrorMessage
@@ -125,7 +127,7 @@ export default function CustomModal({ isOpen, onClose }) {
                   <Field
                     type="number"
                     name="phone"
-                    placeholder="Phone"
+                    placeholder={t("registration.placeholders.phone")}
                     className={styles.field}
                   />
                   <ErrorMessage
@@ -140,7 +142,7 @@ export default function CustomModal({ isOpen, onClose }) {
                     className={styles.textarea}
                     as="textarea"
                     name="message"
-                    placeholder="Message"
+                    placeholder={t("registration.placeholders.message")}
                   />
                   <ErrorMessage
                     className={styles.error}
@@ -151,7 +153,7 @@ export default function CustomModal({ isOpen, onClose }) {
               </ul>
 
               <button type="submit" className={styles.button}>
-                Book Session
+                {t("registration.button")}
               </button>
             </Form>
           </Formik>
