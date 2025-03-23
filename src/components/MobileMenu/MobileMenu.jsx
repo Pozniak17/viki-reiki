@@ -47,7 +47,7 @@ export default function MobileMenu({ isOpen, onToggle }) {
         <ul className={styles.mobile_list}>
           <li className={styles.mobile_item}>
             <NavLink className={buildLinkClass} onClick={onToggle} to="/story">
-              My Story
+              {t("header.nav1")}
             </NavLink>
           </li>
           <li className={styles.mobile_item}>
@@ -56,7 +56,7 @@ export default function MobileMenu({ isOpen, onToggle }) {
               onClick={onToggle}
               to="/sessions"
             >
-              Reiki Sessions
+              {t("header.nav2")}
             </NavLink>
           </li>
           <li className={styles.mobile_item}>
@@ -65,7 +65,7 @@ export default function MobileMenu({ isOpen, onToggle }) {
               onClick={onToggle}
               to="/calendar"
             >
-              Calendar
+              {t("header.nav3")}
             </NavLink>
           </li>
           <li className={styles.mobile_item}>
@@ -77,12 +77,12 @@ export default function MobileMenu({ isOpen, onToggle }) {
               }}
               href="#FAQs"
             >
-              FAQs
+              {t("header.nav4")}
             </a>
           </li>
           <li className={styles.mobile_item}>
             <a className={styles.link} onClick={onToggle} href="#footer">
-              Contact
+              {t("header.nav5")}
             </a>
           </li>
 

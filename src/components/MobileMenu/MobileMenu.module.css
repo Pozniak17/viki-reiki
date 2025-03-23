@@ -28,8 +28,6 @@
   color: var(--Body-Text, #191919);
   text-decoration: none;
 
-  /* Mobile/Headings/H2 */
-  font-family: Lato;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -87,7 +85,7 @@
 
 .logo_text {
   color: var(--accent-blue, #6091d4);
-  font-family: Lato;
+
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -135,8 +133,6 @@
   cursor: pointer;
   color: var(--Body-Text, #2c2727);
 
-  /* Desktop/Body/Small */
-  font-family: Lato;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -165,9 +161,6 @@
 
   .mobile_item {
     color: var(--Body-Text, #191919);
-
-    /* Tablet/Headings/H2 */
-    font-family: Lato;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
