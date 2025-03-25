@@ -57,6 +57,7 @@
 }
 
 .text {
+  height: 192px;
   margin-bottom: 24px;
   color: var(--Body-Grey, #414343);
   font-size: 16px;
@@ -107,6 +108,10 @@
   .card_price {
     padding: 16px 11px;
   }
+
+  .text {
+    height: 168px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -146,6 +151,7 @@
 
   .text {
     font-size: 18px;
+    height: 196px;
   }
 
   .button {
