@@ -46,6 +46,13 @@ export default function MyStory() {
       <h3 className={styles.second_title}>{t("story.secondTitle")}</h3>
       <p className={styles.text}>{t("story.text")}</p>
 
+      <img
+        className={styles.next_image}
+        srcSet="/images/MyStory/circle-left-1x.jpg 1x, /images/MyStory/circle-left-2x.jpg 2x"
+        src="/images/MyStory/circle-right-1x.jpg 1x"
+        alt="circle"
+      />
+
       <h2 className={styles.title}>{t("mission.title")}</h2>
       <h3 className={styles.second_title}>{t("mission.secondTitle")}</h3>
       <p className={styles.text}>{t("mission.text")}</p>
@@ -69,6 +76,13 @@ export default function MyStory() {
           <p className={styles.list_text}>{t("missionList.item3")}</p>
         </li>
       </ul>
+
+      <img
+        className={styles.next_image}
+        srcSet="/images/MyStory/circle-right-1x.jpg 1x, /images/MyStory/circle-right-2x.jpg 2x"
+        src="/images/MyStory/circle-right-1x.jpg 1x"
+        alt="circle"
+      />
 
       <h2 className={styles.title}>{t("choose.title")}</h2>
       <ul className={styles.list}>

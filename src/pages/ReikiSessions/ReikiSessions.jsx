@@ -22,7 +22,7 @@ export default function ReikiSessions() {
         <motion.img
           srcSet="/images/ReikiSessions/reiki-sessions-1x.jpg 1x, /images/ReikiSessions/reiki-sessions-2x.jpg 2x"
           src="/images/ReikiSessions/reiki-sessions-1x.jpg"
-          className={styles.images}
+          className={styles.image}
           alt="healing hand"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
