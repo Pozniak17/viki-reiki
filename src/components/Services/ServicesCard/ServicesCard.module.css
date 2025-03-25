@@ -1,7 +1,7 @@
 .wrapper {
   width: 300px;
   height: 638px;
-  padding: 32px 24px;
+  padding: 24px 24px;
 
   display: flex;
   flex-direction: column;
@@ -68,7 +68,7 @@
 }
 
 .button {
-  display: flex;
+  display: block;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
