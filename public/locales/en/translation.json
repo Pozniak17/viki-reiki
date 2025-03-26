@@ -25,6 +25,7 @@
   "services": {
     "servicesTitle": "Healing Services Offered",
     "servicesText": "These are the different ways I can support your wellness journey:",
+    "button": "Open to read",
     "cards": {
       "servicesCard1": {
         "title": "Individual Session",
