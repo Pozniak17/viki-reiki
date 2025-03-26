@@ -1,8 +1,11 @@
+import { useTranslation } from "react-i18next";
 import styles from "./ServicesCard.module.css";
 
 export default function ServicesCard({ image, title, text }) {
+  const { t, i18n } = useTranslation();
+  const isUkrainian = i18n.language === "ua"; //чи мова українська
   return (
-    <div className={styles.wrapper}>
+    <div className={isUkrainian ? styles.ukrainian_wrapper : styles.wrapper}>
       <div>
         <img src={image} alt="author photo" className={styles.image} />
         <div className={styles.card_wrapper}>

@@ -1,6 +1,22 @@
 .wrapper {
   width: 300px;
-  height: 638px;
+  height: 608px;
+  padding: 24px 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-radius: 32px;
+  border: 1px solid var(--Button-Primary-Reset, #f7b84b);
+  background: var(--Background-White, #fff);
+  box-shadow: 0px 1px 2px 0px rgba(239, 92, 0, 0.1),
+    0px 0px 2px 0px rgba(239, 92, 0, 0.12);
+}
+
+.ukrainian_wrapper {
+  width: 300px;
+  height: 656px;
   padding: 24px 24px;
 
   display: flex;
@@ -57,8 +73,6 @@
 }
 
 .text {
-  height: 192px;
-  margin-bottom: 24px;
   color: var(--Body-Grey, #414343);
   font-size: 16px;
   font-style: normal;
@@ -68,7 +82,7 @@
 }
 
 .button {
-  display: block;
+  display: flex;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
@@ -108,9 +122,10 @@
   .card_price {
     padding: 16px 11px;
   }
-
-  .text {
-    height: 168px;
+  .ukrainian_wrapper {
+    width: 338px;
+    height: 656px;
+    padding: 32px 24px;
   }
 }
 
@@ -151,7 +166,6 @@
 
   .text {
     font-size: 18px;
-    height: 196px;
   }
 
   .button {
@@ -160,5 +174,11 @@
     font-weight: 700;
     line-height: 32px; /* 133.333% */
     letter-spacing: 0.5px;
+  }
+
+  .ukrainian_wrapper {
+    width: 384px;
+    height: 660px;
+    padding: 32px 24px;
   }
 }
