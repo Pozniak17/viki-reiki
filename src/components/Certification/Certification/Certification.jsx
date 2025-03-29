@@ -15,8 +15,7 @@ export default function Certification() {
   return (
     <Section>
       <Title>{t("certification.title")}</Title>
-      <p className={styles.text}></p>
-      {t("certification.text")}
+      <p className={styles.text}>{t("certification.text")}</p>
       {isTabletScreen ? <CertificationList /> : <CertificationSlider />}
     </Section>
   );

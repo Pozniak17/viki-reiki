@@ -30,10 +30,10 @@
 }
 
 .button_accent {
-  margin-bottom: 24px;
+  width: 100%;
+  margin-bottom: 16px;
   border-radius: 30px;
   background: #4194b7;
-  width: 100%;
   height: 64px;
   padding: 18px 48px;
   display: flex;
@@ -41,38 +41,79 @@
   align-items: center;
 
   color: #fff;
-
-  font-size: 16px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 700;
-  line-height: 32px; /* 200% */
-  letter-spacing: 0.08px;
+  line-height: 28px;
+  letter-spacing: 0.22px;
   border: inherit;
   cursor: pointer;
+
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.button_accent:hover,
+.button_accent:focus {
+  background: linear-gradient(180deg, #fff 0%, #5ba9cc 100%);
+  box-shadow: -1px 0px 1px 0px #2f728e inset,
+    1px 0px 1px 0px rgba(47, 114, 142, 0.12) inset,
+    0px 2px 1px 0px rgba(47, 114, 142, 0.2) inset;
+}
+
+.button_accent:active {
+  background: linear-gradient(180deg, #fff 0%, #33789b 100%);
+  box-shadow: 0px -1px 0px 0px #b5b5b5 inset,
+    0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset, 0px 0px 0px 1px #fff inset;
 }
 
 .button {
-  text-decoration: none;
   width: 100%;
+  text-decoration: none;
   border-radius: 30px;
   border: 2px solid var(--Button-Tertiary-reset-text, #4194b7);
   background: var(--Background-White, #fff);
 
   height: 64px;
   padding: 18px 48px;
-  color: var(--Button-Default-Reset, #4194b7);
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  font-size: 16px;
+  color: var(--button-default-reset, #4194b7);
+  font-size: 22px;
   font-style: normal;
   font-weight: 700;
-  line-height: 32px; /* 200% */
-  letter-spacing: 0.08px;
+  line-height: 28px;
+  letter-spacing: 0.22px;
 
   cursor: pointer;
+
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--button-default-hover, #5ba9cc);
+  border: 2px solid var(--button-tertiary-hover-text, #5ba9cc);
+  background: var(
+    --button-tertiary-Hover,
+    linear-gradient(180deg, #fff 0%, #aff486 100%)
+  );
+  box-shadow: -1px 0px 1px 0px rgba(75, 185, 10, 0.12) inset,
+    1px 0px 1px 0px rgba(47, 114, 142, 0.12) inset,
+    0px 2px 1px 0px rgba(47, 114, 142, 0.2) inset;
+}
+
+.button:active {
+  color: var(--button-default-pressed, #33789b);
+  border: 2px solid var(--button-default-pressed, #33789b);
+  background: var(
+    --button-tertiary-pressed,
+    linear-gradient(180deg, #fff 0%, #7aed36 100%)
+  );
+  box-shadow: 0px -1px 0px 0px #52c011 inset,
+    0px 0px 0px 1px rgba(82, 192, 17, 0.1) inset, 0px 0px 0px 1px #52c011 inset;
 }
 
 @media (min-width: 744px) {
@@ -100,10 +141,12 @@
 
   .button_wrapper {
     display: flex;
-    gap: 15px;
+    justify-content: center;
+    gap: 48px;
   }
 
   .button_accent {
+    width: 236px;
     margin-bottom: 0;
     color: #fff;
 
@@ -114,6 +157,7 @@
     letter-spacing: 0.22px;
   }
   .button {
+    width: 177px;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -126,7 +170,7 @@
   .wrapper {
     display: flex;
     align-items: center;
-    gap: 64px;
+    gap: 48px;
   }
 
   .image {
@@ -147,7 +191,12 @@
     margin-bottom: 80px;
   }
 
+  .button_wrapper {
+    justify-content: start;
+  }
+
   .button_accent {
+    width: 251px;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
