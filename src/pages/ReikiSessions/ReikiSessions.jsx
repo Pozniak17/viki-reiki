@@ -1,12 +1,27 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Section from "../../components/shared/Section/Section";
 import styles from "./ReikiSessions.module.css";
 import CustomModal from "../../components/CustomModal/CustomModal";
 import { t } from "i18next";
+import { useLocation } from "react-router-dom";
 
 export default function ReikiSessions() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+        }, 100); // невелика затримка, щоб дочекатися повного рендеру
+      }
+    }
+  }, [location]);
+
   return (
     <Section>
       <div className={styles.image_wrapper}>
@@ -40,7 +55,9 @@ export default function ReikiSessions() {
         />
       </div>
 
-      <h2 className={styles.title}>{t("reikiSessions.block1.title")}</h2>
+      <h2 id="individual" className={styles.title}>
+        {t("reikiSessions.block1.title")}
+      </h2>
       <p className={styles.text}>{t("reikiSessions.block1.text")}</p>
 
       <div className={styles.main_wrapper}>
@@ -156,7 +173,9 @@ export default function ReikiSessions() {
       />
 
       <div className={styles.main_wrapper}>
-        <h2 className={styles.title}>{t("reikiSessions.block2.title")}</h2>
+        <h2 id="group" className={styles.title}>
+          {t("reikiSessions.block2.title")}
+        </h2>
         <p className={styles.text}>{t("reikiSessions.block2.text")}</p>
 
         <div className={styles.wrapper}>
@@ -273,7 +292,9 @@ export default function ReikiSessions() {
         alt="hands around moon"
       />
 
-      <h2 className={styles.title}>{t("reikiSessions.block3.title")}</h2>
+      <h2 id="meditation" className={styles.title}>
+        {t("reikiSessions.block3.title")}
+      </h2>
       <p className={styles.text}>{t("reikiSessions.block3.text")}</p>
 
       <div className={styles.main_wrapper}>
@@ -390,7 +411,9 @@ export default function ReikiSessions() {
         alt="hands and butterfly"
       />
 
-      <h2 className={styles.title}>{t("reikiSessions.block4.title")}</h2>
+      <h2 id="training" className={styles.title}>
+        {t("reikiSessions.block4.title")}
+      </h2>
       <p className={styles.text}>{t("reikiSessions.block4.text")}</p>
 
       <div className={styles.main_wrapper}>

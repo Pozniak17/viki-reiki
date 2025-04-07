@@ -1,12 +1,11 @@
 import { useTranslation } from "react-i18next";
 import styles from "./ServicesCard.module.css";
-import { useState } from "react";
-import CustomModal from "../../CustomModal/CustomModal";
+import { Link } from "react-router-dom";
 
-export default function ServicesCard({ image, title, text }) {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
+export default function ServicesCard({ image, title, url, text }) {
   const { t, i18n } = useTranslation();
   const isUkrainian = i18n.language === "ua"; //чи мова українська
+
   return (
     <div className={isUkrainian ? styles.ukrainian_wrapper : styles.wrapper}>
       <div>
@@ -17,10 +16,9 @@ export default function ServicesCard({ image, title, text }) {
         <p className={styles.text}>{text}</p>
       </div>
 
-      <button className={styles.button} onClick={() => setModalIsOpen(true)}>
+      <Link to={`sessions/#${url}`} className={styles.button}>
         {t("services.button")}
-      </button>
-      <CustomModal isOpen={modalIsOpen} onClose={() => setModalIsOpen(false)} />
+      </Link>
     </div>
   );
 }

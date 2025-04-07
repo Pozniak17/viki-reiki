@@ -7,9 +7,10 @@ export default function ServicesList() {
   const { t } = useTranslation();
   return (
     <ul className={style.cardlist}>
-      {services.map(({ id, image }) => (
+      {services.map(({ id, image, url }) => (
         <li key={id}>
           <ServicesCard
+            url={url}
             image={image}
             title={t(`services.cards.servicesCard${id}.title`)}
             text={t(`services.cards.servicesCard${id}.text`)}

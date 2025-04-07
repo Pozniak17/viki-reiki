@@ -1,18 +1,22 @@
 [
   {
     "id": 1,
-    "image": "/images/Services/1.jpg"
+    "image": "/images/Services/1.jpg",
+    "url": "individual"
   },
   {
     "id": 2,
-    "image": "/images/Services/2.jpg"
+    "image": "/images/Services/2.jpg",
+    "url": "group"
   },
   {
     "id": 3,
-    "image": "/images/Services/3.jpg"
+    "image": "/images/Services/3.jpg",
+    "url": "meditation"
   },
   {
     "id": 4,
-    "image": "/images/Services/4.jpg"
+    "image": "/images/Services/4.jpg",
+    "url": "training"
   }
 ]
