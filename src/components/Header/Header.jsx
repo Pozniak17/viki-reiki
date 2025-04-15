@@ -45,7 +45,7 @@ export default function Header() {
             <li className={styles.logo_item}>
               <Link to="/" className={styles.header_logo}>
                 <Icon id="logo-header" className={styles.logo} />
-                <p className={styles.logo_text}>Viki Reiki</p>
+                <p className={styles.logo_text}>Reiki Viki</p>
               </Link>
             </li>
 

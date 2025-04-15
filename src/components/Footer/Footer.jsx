@@ -192,7 +192,7 @@ export default function Footer() {
                   }
                 >
                   <Icon id={"logo-footer"} className={styles.logo} />
-                  <h2 className={styles.logo_title}>Viki Reiki</h2>
+                  <h2 className={styles.logo_title}>Reiki Viki</h2>
                 </Link>
               </div>
             </div>

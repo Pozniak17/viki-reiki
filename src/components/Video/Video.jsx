@@ -38,7 +38,7 @@ export default function Video() {
       <div className={styles.video_player}>
         <ReactPlayer
           className={styles["react-player"]}
-          url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+          url="https://youtu.be/Y7tcH1EM8hc?si=m8ghk4c75_M28Lyn"
           controls
           width="100%"
           height="100%"
