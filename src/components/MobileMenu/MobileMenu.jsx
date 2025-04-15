@@ -111,7 +111,7 @@ export default function MobileMenu({ isOpen, onToggle }) {
 
         <NavLink onClick={onToggle} to="/" className={styles.logo_wrapper}>
           <img src="/icons/logo.svg" alt="logo" />
-          <p className={styles.logo_text}>Viki Reiki</p>
+          <p className={styles.logo_text}>Reiki Viki</p>
         </NavLink>
 
         <button className={styles.close_button} onClick={onToggle}>
