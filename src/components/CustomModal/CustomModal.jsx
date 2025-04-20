@@ -145,7 +145,7 @@ export default function CustomModal({ isOpen, onClose }) {
                     placeholder={t("registration.placeholders.message")}
                   />
                   <ErrorMessage
-                    className={styles.error}
+                    className={styles.message_error}
                     name="message"
                     component="span"
                   />

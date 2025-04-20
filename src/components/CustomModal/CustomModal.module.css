@@ -61,6 +61,7 @@
 }
 
 .item {
+  position: relative;
   padding: 16px;
 }
 
@@ -124,10 +125,28 @@
 }
 
 .error {
+  left: 16px;
+  top: 52px;
+  position: absolute;
   margin: 0;
   padding: 0;
   color: #ff4343;
-  font-size: 10px;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.message_error {
+  position: absolute;
+  left: 16px;
+  top: 107px;
+  margin: 0;
+  padding: 0;
+  color: #ff4343;
+  font-family: Lato;
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
