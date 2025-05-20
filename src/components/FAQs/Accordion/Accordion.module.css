@@ -1,5 +1,12 @@
+/* Accordion.module.css */
+
 .accordion {
   list-style: none;
+  height: 580px;
+  overflow: auto;
+
+  scrollbar-width: auto;
+  scrollbar-color: #4194b7 #dfdfdf;
 }
 
 .accordion_item {
