@@ -134,7 +134,7 @@ export default function Footer() {
                 </li>
 
                 <li className={styles.icon_item}>
-                  <a href="">
+                  <a href="https://t.me/Vicroriia">
                     <Icon
                       id={"icon-telegram"}
                       className={styles.icon_telegram}
