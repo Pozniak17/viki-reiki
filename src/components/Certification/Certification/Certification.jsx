@@ -3,8 +3,8 @@ import { useTranslation } from "react-i18next";
 import Section from "../../shared/Section/Section";
 import Title from "../../shared/Title/Title";
 import styles from "./Certification.module.css";
-import CertificationList from "../CertificationList/CertificationList";
 import CertificationSlider from "../CertificationSlider/CertificationSlider";
+import CertificationList from "../CertificationList/CertificationList";
 
 export default function Certification() {
   const { t } = useTranslation();
@@ -16,7 +16,8 @@ export default function Certification() {
     <Section>
       <Title>{t("certification.title")}</Title>
       <p className={styles.text}>{t("certification.text")}</p>
-      {isTabletScreen ? <CertificationList /> : <CertificationSlider />}
+      {/* {isTabletScreen ? <CertificationList /> : <CertificationSlider />} */}
+      <CertificationSlider />
     </Section>
   );
 }
