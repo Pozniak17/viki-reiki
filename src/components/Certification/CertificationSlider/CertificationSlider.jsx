@@ -1,76 +1,49 @@
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { t } from "i18next";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+// import styles from "./CertificationSlider.module.css";
 import CertificationCard from "../CertificationCard/CertificationCard";
+
 import certificates from "../../utils/json/certificates.json";
+import { t } from "i18next";
 
 export default function CertificationSlider() {
-  const settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 1.025,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    // responsive: [
-    //   {
-    //     breakpoint: 1440,
-    //     settings: {
-    //       slidesToShow: 3,
-    //       slidesToScroll: 1,
-    //       infinite: true,
-    //       dots: true,
-    //     },
-    //   },
-    // ],
-  };
   return (
-    <div className="slider-container">
-      <Slider {...settings}>
-        {certificates.map(({ id, image }) => (
+    <Swiper
+      modules={[Pagination, Autoplay]}
+      centeredSlidesBounds={true}
+      spaceBetween={0}
+      slidesPerView={1}
+      direction="horizontal" // Горизонтальна прокрутка (за замовчуванням)
+      pagination={{ clickable: true }} // Додає навігацію (опціонально)
+      onSlideChange={() => console.log("slide change")}
+      onSwiper={(swiper) => console.log(swiper)}
+      breakpoints={{
+        0: {
+          slidesPerView: 1,
+        },
+        360: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        1440: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        },
+      }}
+    >
+      {certificates.map(({ id, image }) => (
+        <SwiperSlide key={id}>
           <CertificationCard
-            key={id}
             image={image}
             text={t(`certification.cards.certificationCard${id}`)}
           />
-        ))}
-      </Slider>
-    </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 }
-
-// //<Swiper
-//   modules={[Pagination, Autoplay]}
-//   centeredSlidesBounds={true}
-//   spaceBetween={0}
-//   slidesPerView={1}
-//   direction="horizontal" // Горизонтальна прокрутка (за замовчуванням)
-//   pagination={{ clickable: true }} // Додає навігацію (опціонально)
-//   onSlideChange={() => console.log("slide change")}
-//   onSwiper={(swiper) => console.log(swiper)}
-//   breakpoints={{
-//     0: {
-//       slidesPerView: 1,
-//     },
-//     360: {
-//       slidesPerView: 1,
-//       spaceBetween: 20,
-//     },
-//     1440: {
-//       slidesPerView: 3,
-//       spaceBetween: 24,
-//     },
-//   }}
-// >
-
-// {
-//   certificates.map(({ id, image }) => (
-//     <SwiperSlide key={id}>
-//       <CertificationCard
-//         image={image}
-//         text={t(`certification.cards.certificationCard${id}`)}
-//       />
-//     </SwiperSlide>
-//   ));
-// }
