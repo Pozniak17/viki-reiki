@@ -4,7 +4,7 @@ import FAQs from "../../components/FAQs/FAQs/FAQs";
 import Hero from "../../components/Hero/Hero";
 import Introduce from "../../components/Introduce/Introduce";
 import Registation from "../../components/Registation/Registration/Registation";
-import Services from "../../components/Services/Services/Services";
+// import Services from "../../components/Services/Services/Services";
 import Steps from "../../components/Steps/Steps";
 import Video from "../../components/Video/Video";
 
@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Hero />
       <Introduce />
-      <Services />
+      {/* <Services /> */}
       <Benefits />
       <Certification />
       <Video />
